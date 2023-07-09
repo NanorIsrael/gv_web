@@ -8,7 +8,7 @@ export default function Post() {
                 <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores eos corrupti officia, iusto perspiciatis ullam. Suscipit a, illum consectetur est, aspernatur, 
                   iusto molestiae voluptas sit fugit reiciendis nihil possimus.
                 
-                <span className="read_more ml-2 no_wrap">&mdash;&gt;&nbsp;<Link to="/">read more</Link></span>
+                <span className="read_more ml-2 no_wrap"><strong>&mdash;&gt;&nbsp;<Link to="/">read more</Link></strong></span>
                 </p>
         </div>
     )

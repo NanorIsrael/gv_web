@@ -114,12 +114,32 @@ img {
   display: inline-block;
   margin-right: 1em;
   color: var(--HIGHLIGHT-COLOR);
-  font-weight: 900;
 }
 .read_more  {
   /* margin: 0 0.5em; */
   text-transform: uppercase;
 }
+/* PROJECTS */
+/* figcaption span {
+  margin-right: 1rem;
+} */
+
+figcaption a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+figcaption a:hover {
+  color: #007ac0;
+}
+
+figcaption a:visited {
+  color: #c000ba;
+}
+.project_name {
+  display: inline-block;
+}
+/* ABOUT */
 .about {
   background-color: var(--BODY-BGCOLOR);
 }
