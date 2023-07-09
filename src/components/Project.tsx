@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function Post() {
+export default function Project() {
   return (
     <div className="card p-4 bg-white rounded overflow-hidden shadow-md w-100 h-80 m-2 lg:w-64 m-1">
       <figure>
