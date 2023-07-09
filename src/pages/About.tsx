@@ -1,4 +1,3 @@
-import Body from "../components/Body";
 
 function About() {
     return (
