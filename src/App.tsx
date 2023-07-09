@@ -16,15 +16,19 @@ function App() {
             <li className={'mr-4'}>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li className={'mr-4'}><NavLink to="/projects">Projects</NavLink></li>
-            <li className={'mr-4'}><NavLink to="/about">About</NavLink></li>
+            <li className={'mr-4'}>
+              <NavLink to="/projects">Projects</NavLink>
+            </li>
+            <li className={'mr-4'}>
+              <NavLink to="/about">About</NavLink>
+            </li>
           </ul>
         </nav>
       </header>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/projects" element={<Projects/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <footer>&copy; GraceValley Technologies</footer>
