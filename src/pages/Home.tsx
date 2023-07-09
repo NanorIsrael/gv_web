@@ -1,12 +1,17 @@
 import Body from "../components/Body";
+import Post from "../components/post";
 
 function Home() {
     return (
       <Body aside>
         <article aria-label="Home">
-            <div className="content">
-            Home
-            </div>
+            <section className="post_content flex flex-col items-center p-4">
+              <Post/>
+              <Post/>
+              <Post/>
+              <Post/>
+              <Post/>
+            </section>
         </article>
       </Body>  
     )

@@ -6,11 +6,11 @@ type BodyProps = {
 
 export default function Body({children, aside}: BodyProps) {
     return (
-        <main className="px-2 ">
-           { aside && <aside className={''}></aside>}
-            <>
+        <main className="pr-2 ">
+           { aside && <aside className={''}>aside</aside>}
+            <div>
                 {children}
-            </>
+            </div>
         </main>
     )
 }

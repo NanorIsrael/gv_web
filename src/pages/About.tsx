@@ -2,8 +2,7 @@ import Body from "../components/Body";
 
 function About() {
     return (
-        <Body>
-            <article aria-label="About" className="">
+            <article aria-label="About" className="p-4 bg-white about">
                 <section className="flex flex-col items-center p-4">
                     <hgroup className="pb-4">
                     <h1 className="greeting gray-500 text-center text-2xl p-2">Hi! I&apos;m Israel.</h1>
@@ -29,7 +28,6 @@ function About() {
               hopefully you will find the content on my site enriching!
             </p>
         </article>
-    </Body>
     )
 }
 
