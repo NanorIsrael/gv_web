@@ -18,10 +18,7 @@ export default function Project() {
             <span>
               <strong>Description:</strong>
             </span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-            ipsa et aspernatur ab alias molestiae consequuntur, debitis enim
-            modi adipisci rerum laudantium autem cumque nemo eligendi natus.
-            Aliquid, voluptate ea!
+            For residents of Washington & Ramsey County who would like to subscribe to the new food scraps pickup program and want to learn more about the program, the R&W food scraps pickup program website will allow users to order their free annual supply of food scrap bags yearly or order additional bags at a cost and to learn more about the program.
           </p>
         </figcaption>
       </figure>

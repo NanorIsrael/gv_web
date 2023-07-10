@@ -1,8 +1,9 @@
 import './App.css';
 import { Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+// import Home from './pages/Home';
 import Projects from './pages/Projects';
+import About from './pages/About';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className={'mr-4'}>
+              <NavLink to="/blog">Blog</NavLink>
+            </li>
+            <li className={'mr-4'}>
               <NavLink to="/projects">Projects</NavLink>
             </li>
             <li className={'mr-4'}>
@@ -26,10 +30,11 @@ function App() {
         </nav>
       </header>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/" element={<Projects/>} />
+        <Route path="/blog" element={<Blog/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="*" element={<Navigate to="/"/>} />
       </Routes>
       <footer>&copy; GraceValley Technologies</footer>
     </div>

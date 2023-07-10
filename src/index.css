@@ -56,9 +56,20 @@ main {
 
 aside {
   flex-grow: 1;
-  background-color: #282c34;
+  background-color: #626C80;
+  color: #4C3999;
+  /* font-weight: 900; */
 }
-
+aside h4,h3 {
+  /* color: #FFF */
+  font-weight: 600;
+}
+aside p {
+  color: #FFF
+}
+aside p {
+  color: #FFF
+}
 article {
   flex-grow: 2;
 }
@@ -129,13 +140,13 @@ figcaption a {
   cursor: pointer;
 }
 
-figcaption a:hover {
+figcaption a:hover, a:focus-visible {
   color: #007ac0;
 }
 
-figcaption a:visited {
+/* figcaption a:visited {
   color: #c000ba;
-}
+} */
 .project_name {
   display: inline-block;
 }
