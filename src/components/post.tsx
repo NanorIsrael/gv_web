@@ -18,6 +18,6 @@ const Post = () => {
       </p>
     </div>
   );
-}
+};
 
 export default Post;

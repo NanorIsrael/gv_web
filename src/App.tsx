@@ -30,11 +30,11 @@ function App() {
         </nav>
       </header>
       <Routes>
-        <Route path="/" element={<Projects/>} />
-        <Route path="/blog" element={<Blog/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="*" element={<Navigate to="/"/>} />
+        <Route path="/" element={<Projects />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <footer>&copy; GraceValley Technologies</footer>
     </div>
