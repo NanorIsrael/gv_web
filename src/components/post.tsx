@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Postme() {
+const Post = () => {
   return (
     <div className="card p-4 bg-white rounded overflow-hidden shadow-md w-100 h-80 m-2 lg:w-64 m-1">
       <span>{new Date(Date.now()).toDateString()}</span>
@@ -20,4 +20,4 @@ function Postme() {
   );
 }
 
-export default Postme;
+export default Post;
