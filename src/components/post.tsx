@@ -2,20 +2,20 @@ import { Link } from 'react-router-dom';
 
 function Post(){
   return (
-    <div className="card p-4 bg-white rounded overflow-hidden shadow-md w-100 h-80 m-2 lg:w-64 m-1">
+    <div className="p-4 bg-white m-2 rounded overflow-hidden shadow-md w-100 h-auto card">
       <span>{new Date(Date.now()).toDateString()}</span>
       <span>Topic</span>
       <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores
-        eos corrupti officia, iusto perspiciatis ullam. Suscipit a, illum
-        consectetur est, aspernatur, iusto molestiae voluptas sit fugit
-        reiciendis nihil possimus.
-        <span className="read_more ml-2 no_wrap">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Excepturi tenetur placeat nostrum deleniti nesciunt possimus 
+        provident molestias odio facilis, quam sed eligendi dignissimos? 
+        Laborum maxime quia eius id blanditiis omnis?
+      </p>
+      <p className="read_more ml-2 no_wrap">
           <strong>
             &mdash;&gt;&nbsp;<Link to="/">read more</Link>
           </strong>
-        </span>
-      </p>
+        </p>
     </div>
   );
 };

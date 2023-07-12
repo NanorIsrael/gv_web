@@ -8,7 +8,7 @@ type ProjectProps = {
 }
 export default function Project({description, url, name, img}: ProjectProps) {
   return (
-    <div className="card p-4 bg-white rounded overflow-hidden shadow-md w-100 h-80 m-2 lg:w-64 m-1">
+    <div className="p-4 bg-white rounded overflow-hidden shadow-md w-100 m-2">
       <figure>
         <img src={`/images/projects/${img}.png`} alt="project-rw" />
         <figcaption>

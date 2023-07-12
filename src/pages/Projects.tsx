@@ -29,11 +29,25 @@ function Projects() {
     description:`${"A booking application to enable a beautician client, serve her customers \
      with all their beauty needs and provide other online services. A personal project and still in progress."}`,
     img: "truhair",
+  },
+  {
+    id: 4,
+    url: "https://dreamy-hermann-e618fe.netlify.app",
+    name:'Gv Foods', 
+    description:`${"Get all your food needs from gv foods. We are ready to serve you. A personal project and still in progress."}`,
+    img: "bistro",
+  },
+  {
+    id: 5,
+    url: "https://gifted-einstein-27d727.netlify.app",
+    name:'Tenzies', 
+    description:`${"An online tenzies game. We are ready to serve you. A personal project and still in progress."}`,
+    img: "tenzies",
   }
 ]
   return (
     <Body aside>
-      <article aria-label="Projects">
+      <article aria-label="Projects" className='bg-gray-100'>
        { project.map(p => <Project
         description={p.description}
         url={p.url} 

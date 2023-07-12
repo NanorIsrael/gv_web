@@ -115,12 +115,7 @@ img {
 
 /* HOME */
 
-.card {
-  margin-bottom: 1em;
-  box-shadow: 1px 2px 10px whitesmoke;
-  border: 1px solid whitesmoke;
-  padding: 1em 1em;
-}
+
 .card span {
   display: inline-block;
   margin-right: 1em;
@@ -131,9 +126,9 @@ img {
   text-transform: uppercase;
 }
 /* PROJECTS */
-/* figcaption span {
-  margin-right: 1rem;
-} */
+figcaption span {
+  margin-right: 0.5em;
+}
 
 figcaption a {
   text-decoration: underline;

@@ -5,7 +5,7 @@ type BodyProps = {
 
 export default function Body({ children, aside }: BodyProps) {
   return (
-    <main className="pr-2 ">
+    <main className="pr-2 bg-gray-100 ">
       {aside && (
         <aside className={'aside p-4 '}>
           <h3 className="text-center text-2xl text-bold">Personal details</h3>
