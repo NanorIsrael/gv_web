@@ -12,7 +12,7 @@ function Profile() {
         reiciendis nihil possimus.
         <span className="read_more ml-2 no_wrap">
           <strong>
-            &mdash;&gt;&nbsp;<Link to="/">read more</Link>
+            &mdash;&gt;&nbsp;<a href="/" target={'_blank'} rel={'noreferrer noopener'}>read more</a>
           </strong>
         </span>
       </p>

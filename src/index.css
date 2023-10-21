@@ -115,7 +115,9 @@ img {
 
 /* HOME */
 
-
+.card a {
+  color: #4C3999;
+}
 .card span {
   display: inline-block;
   margin-right: 1em;
