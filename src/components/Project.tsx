@@ -7,10 +7,11 @@ type ProjectProps = {
     description: string
 }
 export default function Project({description, url, name, img}: ProjectProps) {
+
   return (
     <div className="p-4 bg-white rounded overflow-hidden shadow-md w-100 m-2">
       <figure>
-        <img src={`/images/projects/${img}.png`} alt="project-rw" />
+        <img src={`/images/projects/${img}.webp`} alt="project-rw" />
         <figcaption>
           <p>
             <span className="">

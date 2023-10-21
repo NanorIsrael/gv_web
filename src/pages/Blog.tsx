@@ -1,5 +1,5 @@
 import Body from '../components/Body';
-import Post from '../components/post';
+import Post from '../components/Post';
 
 function Blog() {
   return (
