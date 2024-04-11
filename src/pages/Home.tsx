@@ -1,13 +1,32 @@
+import Project from "../components/Project";
 
 function Home() {
+  const project = [
+    { 
+    id: 1,
+    url: "https://foodscrapspickup.com",
+    name: "Ramsey/Washington Food Scraps Pickup Program", 
+    description:"An ecommerce application for Ramsey/Washington county.",
+    img: "rwhome",
+  },
+  {
+    id: 2,
+    url: "https://nanorisrael.github.io/movie_store/",
+    name:'chatroom', 
+    description:`${"A social media app for communities and individuals."}`,
+    img: "cimoviez",
+  },
+
+]
+
   return (
     <>
       <article aria-label="Home">
-      <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url("Israel_Image.png")' }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }}>
+      <div className="absolute inset-0 bg-black opacity-50 pt-16"></div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
         <h1 className="text-4xl md:text-6xl text-center font-bold">Hi! I&apos;m Israel.</h1>
-        <h2 className="text-2xl md:text-3xl text-center font-bold">An Innovative Full-Stack Software Engineer</h2>
+        <h2 className="text-2xl md:text-3xl text-center font-bold">An Innovative Software Engineer</h2>
         <p className="text-lg md:text-xl text-center mt-4">Creating Digital Solutions</p>
         <p className="text-lg md:text-xl text-center max-w-[70%]">With a passion for technology and a knack for problem-solving, I am revolutionizing the digital landscape. My expertise in full-stack development allows me to create seamless and innovative solutions that drive business growth.</p>
         <div className="flex mt-8">
@@ -16,6 +35,17 @@ function Home() {
         </div>
       </div>
     </div>
+    <section className="pt-12">
+      <h3 className="text-sm md:text-md text-center font-bold">Projects</h3>
+      <h2 className="text-2xl md:text-3xl text-center font-bold mt-2">Showcasing My Expertise</h2>
+      <p className="text-sm md:text-md text-center mt-2">Explore a selection  of my full-stack projects.</p>
+      { project.map(p => <Project
+        description={p.description}
+        url={p.url} 
+        name={p.name}
+        img={p.img}
+        key={p.id}/>)}
+    </section>
       </article>
     </>
   );

@@ -8,8 +8,8 @@ import Home from './pages/Home';
 function App() {
   return (
     <div className="container">
-      <header className={'flex justify-between'}>
-        <Link to="/" className="text-2xl p-2">
+      <header className={'flex justify-between z-0'}>
+        <Link to="/" className="hidden text-2xl p-2 z-0 md:block">
           GvTech
         </Link>
         <nav className={'flex p-2 text-xl'}>
