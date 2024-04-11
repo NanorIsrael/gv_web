@@ -12,10 +12,10 @@ function Home() {
   },
   {
     id: 2,
-    url: "https://nanorisrael.github.io/movie_store/",
-    name:'chatroom', 
-    description:`${"A social media app for communities and individuals."}`,
-    img: "cimoviez",
+    url: "https://bsy.sh",
+    name:'bitsy', 
+    description:`${"The All-In-One platform to create and manage Short Links, Link-in-Bio pages, Digi Notes and QR Codes. Driving results, one click at a time."}`,
+    img: "bsy-link",
   },
 
 ]
@@ -36,10 +36,10 @@ function Home() {
               <a href="#projects">Projects</a>
             </li>
             <li className={'mr-4'}>
-              <a href="/blog">Skills</a>
+              <a href="/">Skills</a>
             </li>
             <li className={'mr-4'}>
-              <a href="/about">Contact</a>
+              <a href="/">Contact</a>
             </li>
            </ul> 
         </nav>
@@ -53,8 +53,8 @@ function Home() {
         <p className="text-lg md:text-xl text-center mt-4">Creating Digital Solutions</p>
         <p className="text-lg md:text-xl text-center max-w-[70%]">With a passion for technology and a knack for problem-solving, I am revolutionizing the digital landscape. My expertise in full-stack development allows me to create seamless and innovative solutions that drive business growth.</p>
         <div className="flex mt-8">
-          <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4">Learn More</button>
-          <button className="bg-white hover:bg-green-700 text-black font-bold py-2 px-4 rounded">Collaborate</button>
+          <button className="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4">Learn More</button>
+          <button className="bg-white hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded">Collaborate</button>
         </div>
       </div>
     </div>
@@ -75,8 +75,59 @@ function Home() {
         </Link>
       </div>
     </section>
+    <section className="py-4 px-2">
+    <h2 className="text-2xl md:text-3xl text-start font-semibold mt-2">What They Say</h2>
+    <p className="text-sm md:text-md text-start py-2">Read testimonials from my satified clients and professionals.</p>
+      <div className="md:flex justify-around">
+      <div className="py-8 md:max-w-[300px]">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        <p className="text-sm md:text-md text-start py-2 font-medium">Israel Nanor is truly exeptional and innovative.</p>
+        <figure className="my-2 p-1">
+          <img src="images/testimonials/adam.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
+          <figcaption className="py-2 leading-tight">
+            <p className="text-sm font-medium md:text-md text-start">Adam Eukuilkruit</p>
+            <p className="text-sm md:text-md text-start">Pricipal software engineer</p>
+            <figure className="flex py-2">
+            <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
+            <p className="font-bold mx-1">Compoze labs</p>
+            </figure>
+          </figcaption>
+        </figure> 
+      </div>
+      <div className="py-8 md:max-w-[300px]">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        <p className="text-sm md:text-md text-start py-2 font-semibold">Israel&apos;s problem solving skills are unmatched.</p>
+        <figure className="my-2 p-1">
+          <img src="images/testimonials/timothy.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
+          <figcaption className="py-2 leading-tight">
+            <p className="text-sm font-medium md:text-md text-start">Timothy foster</p>
+            <p className="text-sm md:text-md text-start">Senior software engineer</p>
+            <figure className="flex py-2">
+            <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
+            <p className="font-bold mx-1">Compoze labs</p>
+            </figure>
+          </figcaption>
+        </figure> 
+      </div>
+      <div className="py-8 md:max-w-[300px]">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        <p className="text-sm md:text-md text-start py-2 font-semibold">I highly recommend Israel for any software development project.</p>
+        <figure className="my-2 p-1">
+          <img src="images/testimonials/chris.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
+          <figcaption className="py-2 leading-tight">
+            <p className="text-sm font-medium md:text-md text-start">Chris Borgen</p>
+            <p className="text-sm md:text-md text-start">Senior software engineer</p>
+            <figure className="flex py-2">
+            <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
+            <p className="font-bold mx-1">Compoze labs</p>
+            </figure>
+          </figcaption>
+        </figure> 
+      </div>
+      </div>
+      
+    </section>
       </article>
-      <footer>&copy; GraceValley Technologies</footer>
     </div>
     </>
   );

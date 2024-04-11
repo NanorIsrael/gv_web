@@ -36,7 +36,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      {/* <footer>&copy; GraceValley Technologies</footer> */}
+      <footer>&copy; GraceValley Technologies</footer>
     </div>
   );
 }

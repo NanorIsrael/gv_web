@@ -11,7 +11,7 @@ export default function Project({description, url, name, img}: ProjectProps) {
   return (
     <div className="p-4 bg-white rounded overflow-hidden shadow-md w-100 m-2">
       <figure>
-        <img src={`/images/projects/${img}.webp`} alt="project-rw" className='w-full'/>
+        <img src={`/images/projects/${img}.webp`} alt={`project-${name}`} className='w-full'/>
         <figcaption>
           <h4 className='font-bold text-md my-2'>
             <Link target={'_blank'} to={url} className='no-underline'>
