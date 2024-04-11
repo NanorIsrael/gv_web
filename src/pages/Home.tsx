@@ -3,7 +3,7 @@ function Home() {
   return (
     <>
       <article aria-label="Home">
-      <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url("path_to_your_image.jpg")' }}>
+      <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url("Israel_Image.png")' }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
         <h1 className="text-4xl md:text-6xl text-center font-bold">Hi! I&apos;m Israel.</h1>
