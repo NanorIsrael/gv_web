@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Project from "../components/Project";
 
 function Home() {
@@ -21,6 +22,28 @@ function Home() {
 
   return (
     <>
+      <div className="container">
+      <header className={'flex justify-between z-0'}>
+        <a href="/" className="hidden text-2xl p-2 z-0 md:block">
+          GvTech
+        </a>
+        <nav className={'flex p-2 text-xl'}>
+          <ul className={'flex'}>
+            <li className={'mr-4'}>
+              <a href="/">About Me</a>
+            </li>
+            <li className={'mr-4'}>
+              <a href="#projects">Projects</a>
+            </li>
+            <li className={'mr-4'}>
+              <a href="/blog">Skills</a>
+            </li>
+            <li className={'mr-4'}>
+              <a href="/about">Contact</a>
+            </li>
+           </ul> 
+        </nav>
+      </header>
       <article aria-label="Home">
       <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }}>
       <div className="absolute inset-0 bg-black opacity-50 pt-16"></div>
@@ -35,7 +58,7 @@ function Home() {
         </div>
       </div>
     </div>
-    <section className="pt-12">
+    <section className="pt-12" id="projects">
       <h3 className="text-sm md:text-md text-center font-bold">Projects</h3>
       <h2 className="text-2xl md:text-3xl text-center font-bold mt-2">Showcasing My Expertise</h2>
       <p className="text-sm md:text-md text-center mt-2">Explore a selection  of my full-stack projects.</p>
@@ -44,9 +67,17 @@ function Home() {
         url={p.url} 
         name={p.name}
         img={p.img}
-        key={p.id}/>)}
+        key={p.id}/>)
+      }
+      <div className="flex justify-center items-center w-full m-4 p-4">
+        <Link to="/projects">
+        <button type={'button'}className="bg-whit text-black font-bold py-2 px-4 rounded border-black border hover:bg-black hover:text-white">View More</button>
+        </Link>
+      </div>
     </section>
       </article>
+      <footer>&copy; GraceValley Technologies</footer>
+    </div>
     </>
   );
 }

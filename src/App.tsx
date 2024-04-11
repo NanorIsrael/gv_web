@@ -1,5 +1,5 @@
 import './App.css';
-import { Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 // import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -8,7 +8,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <div className="container">
-      <header className={'flex justify-between z-0'}>
+      {/* <header className={' z-0'}>
         <Link to="/" className="hidden text-2xl p-2 z-0 md:block">
           GvTech
         </Link>
@@ -28,7 +28,7 @@ function App() {
             </li>
           </ul>
         </nav>
-      </header>
+      </header> */}
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
@@ -36,7 +36,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <footer>&copy; GraceValley Technologies</footer>
+      {/* <footer>&copy; GraceValley Technologies</footer> */}
     </div>
   );
 }

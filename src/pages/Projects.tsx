@@ -1,4 +1,3 @@
-import Body from '../components/Body';
 import Project from '../components/Project';
 
 function Projects() {
@@ -46,7 +45,16 @@ function Projects() {
   }
 ]
   return (
-    <Body aside>
+    <>
+     <header className={'flex justify-between z-0'}>
+        <nav className={'flex p-2 text-xl'}>
+          <ul className={'flex'}>
+            <li className={'mr-4'}>
+              <a href="/">Back</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <article aria-label="Projects" className='bg-gray-100'>
        { project.map(p => <Project
         description={p.description}
@@ -55,7 +63,7 @@ function Projects() {
         img={p.img}
         key={p.id}/>)}
        </article>
-    </Body>
+    </>
   );
 }
 export default Projects;
