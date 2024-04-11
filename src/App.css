@@ -675,6 +675,10 @@ code {
   max-width: 50%;
 }
 
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
+
 .flex-col {
   flex-direction: column;
 }

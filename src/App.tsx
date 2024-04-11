@@ -15,16 +15,16 @@ function App() {
         <nav className={'flex p-2 text-xl'}>
           <ul className={'flex'}>
             <li className={'mr-4'}>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li className={'mr-4'}>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/">About Me</NavLink>
             </li>
             <li className={'mr-4'}>
               <NavLink to="/projects">Projects</NavLink>
             </li>
             <li className={'mr-4'}>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/blog">Skills</NavLink>
+            </li>
+            <li className={'mr-4'}>
+              <NavLink to="/about">Contact</NavLink>
             </li>
           </ul>
         </nav>
