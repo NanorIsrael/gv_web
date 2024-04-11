@@ -36,7 +36,7 @@ function Home() {
               <a href="#projects">Projects</a>
             </li>
             <li className={'mr-4'}>
-              <a href="/">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li className={'mr-4'}>
               <a href="/">Contact</a>
@@ -76,7 +76,7 @@ function Home() {
       </div>
     </section>
     <section className="py-4 px-2">
-    <h2 className="text-2xl md:text-3xl text-start font-semibold mt-2">What They Say</h2>
+    <h2 className="text-2xl md:text-3xl text-start font-bold mt-2">What They Say</h2>
     <p className="text-sm md:text-md text-start py-2">Read testimonials from my satified clients and professionals.</p>
       <div className="md:flex justify-around">
       <div className="py-8 md:max-w-[300px]">
@@ -125,7 +125,24 @@ function Home() {
         </figure> 
       </div>
       </div>
-      
+    </section>
+    <hr/>
+    <section className="p-4 md:flex" id="skills">
+      <hgroup className="w-full">
+      <h2 className="text-[0.5rem] md:text-sm text-start font-semibold mt-2">Innovative</h2>
+      <h3 className="text-2xl md:text-3xl text-start font-bold mt-2">Professional Achievements and Expertise.</h3>
+      </hgroup>
+      <div className="w-full">
+        <p className="text-[0.5rem] md:text-sm text-start mt-2">With years of experience, I have completed numerous projects and mastered various technologies</p>
+        <ul className="py-4 font-semibold leading-normal">
+          <li><span>✓</span>&nbsp;Frontend programming</li>
+          <li><span>✓</span>&nbsp;Backend programming</li>
+          <li><span>✓</span>&nbsp;Devops engineering</li>
+          <li><span>✓</span>&nbsp;Web3 programming</li>
+          <li><span>✓</span>&nbsp;Machine Learning with Python</li>
+        </ul>
+        <button className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded my-4 border border-black">Learn More</button>
+      </div>
     </section>
       </article>
     </div>
