@@ -4,6 +4,7 @@ import { Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Blog from './pages/Blog';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         </nav>
       </header>
       <Routes>
-        <Route path="/" element={<Projects />} />
+        <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
