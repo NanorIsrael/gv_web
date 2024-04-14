@@ -36,7 +36,25 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <footer>&copy; GraceValley Technologies</footer>
+      <footer className='py-12'>
+        <section className='pb-12'>
+          <h4 className='text-xl md:text-md font-bold'>Israel Nanor</h4>
+          <address>
+            <div className='py-2'>
+            <h5 className='font-semibold'>Email:</h5>
+            <p>israelnanor88@gmail.com</p>
+            </div>
+            <div className='py-2'>
+            <h5 className='font-semibold'>Mobile:</h5>
+            <p>+233557084927 / +233271053774</p>
+            </div>
+          </address>
+        </section>
+       <hr/>
+       <p className='pt-4'>
+       &copy; GraceValley Technologies
+       </p>
+      </footer>
     </div>
   );
 }

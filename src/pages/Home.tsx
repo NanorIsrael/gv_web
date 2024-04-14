@@ -193,6 +193,14 @@ const partnerIcons = [
        />
       </div>
       </section>
+      <section className="text-center py-8">
+      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
+      <p className="text-sm md:text-lg">Reach out for collaborations or hiring opportunities.</p>
+      <div className="flex my-8 justify-center">
+          <button className="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2">Contact</button>
+          <button className="bg-white text-black hover:bg-black hover:text-white font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
+        </div>
+      </section>
       </article>
     </div>
     </>

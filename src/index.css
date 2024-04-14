@@ -79,10 +79,7 @@ header {
   margin-top: 0;
   background-color: #000;
 }
-footer {
-  bottom: 0;
-  text-align: center;
-}
+
 footer, header {
   position: sticky;
   background-color: #000;
@@ -176,6 +173,5 @@ figcaption a:hover, a:focus-visible {
 
   .read_more  {
     margin-left: 0.5em;
-   
   }
 }
