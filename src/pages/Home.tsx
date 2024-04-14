@@ -37,8 +37,8 @@ const partnerIcons = [
   return (
     <>
       <div className="container">
-      <header className={'flex justify-between z-0'}>
-        <a href="/" className="hidden text-2xl py-2 z-0 md:block">
+      <header className={'flex justify-between z-50'}>
+        <a href="/" className="hidden text-2xl py-2 md:block">
           GvTech
         </a>
         <nav className={'flex py-2 text-md md:text-lg'}>
@@ -141,7 +141,7 @@ const partnerIcons = [
       </div>
     </section>
     <hr/>
-    <section className="py-4">
+    <section className="py-4 z-50">
       <SwiftIcons  speed={0.5} hoverSpeed={1} shadow={false}>
        {partnerIcons.map((icon, index) => (
         <img key={index} src={icon.src} alt={`Icon ${index}`} className="w-[60px] h-[60px] rounded-full" />
@@ -149,13 +149,13 @@ const partnerIcons = [
     </SwiftIcons>
     </section>
       <hr/>
-    <section className="p-4 md:flex" id="skills">
+    <section className="p-8 md:flex" id="skills">
       <hgroup className="w-full">
       <h2 className="text-[0.5rem] md:text-sm text-start font-semibold mt-2">Innovative</h2>
-      <h3 className="text-2xl md:text-3xl text-start font-bold mt-2">Professional Achievements and Expertise.</h3>
+      <h3 className="text-xl md:text-2xl lg:text-3xl text-start font-bold mt-2 pr-8">Professional Achievements and Expertise.</h3>
       </hgroup>
       <div className="w-full">
-        <p className="text-[0.5rem] md:text-sm text-start mt-2">With years of experience, I have completed numerous projects and mastered various technologies</p>
+        <p className="text-sm md:text-md text-start mt-2 xlg:text-lg">With years of experience, I have completed numerous projects and mastered various technologies</p>
         <ul className="py-4 font-semibold leading-normal">
           <li><span>✓</span>&nbsp;Frontend programming</li>
           <li><span>✓</span>&nbsp;Backend programming</li>
@@ -163,11 +163,36 @@ const partnerIcons = [
           <li><span>✓</span>&nbsp;Web3 programming</li>
           <li><span>✓</span>&nbsp;Machine Learning with Python</li>
         </ul>
-        <button className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded my-4 border border-black">Learn More</button>
+        <button className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
       </div>
       </section>
       <hr/>
-
+      <section className="p-8 md:flex flex-row-reverse" id="skills">
+      <div className="flex flex-col w-full">
+        <hgroup className="w-full">
+        <h2 className="text-[0.5rem] md:text-sm text-start font-semibold mt-2">Imaginative</h2>
+        <h3 className="text-xl md:text-2xl lg:text-3xl text-start font-bold mt-2">Transforming Software Engineering with Unique Approaches.</h3>
+        </hgroup>
+        <div className="w-full">
+        <p className="text-sm md:text-md text-start mt-2 xlg:text-lg transition ease-out delay-1000 duration-1000">Israel is a forward-thinking fullstack software engineer who brings a fresh perspective to every project. With a passion for innovation and a knack for problem-solving, He consistently delivers high-quality solutions that exceed expectations.</p>
+        <ul className="text-xs py-4 leading-loose font-normal md:text-sm md:leading-6 xlg:text-lg">
+          <li><span>&#9672;</span>&nbsp;Revolutionalizing User Experience through Intuitiv Design</li>
+          <li><span>&#9672;</span>&nbsp;Optimizing Performances Seamless Functionality</li>
+          <li><span>&#9672;</span>&nbsp;Implementing Cutting-Edge Technologies for Future-Proof Solutions</li>
+        </ul>
+        <button className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
+        </div>
+      </div>
+      
+      <div className="w-full justify-center">
+       <img 
+       src="images/ui/software.jpg"
+       alt="software illustration"
+       className="pr-8 pt-2 h-full cursor-pointer lg:h-96"
+       width={600}
+       />
+      </div>
+      </section>
       </article>
     </div>
     </>
