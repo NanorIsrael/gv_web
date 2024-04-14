@@ -9,7 +9,7 @@ type ProjectProps = {
 export default function Project({description, url, name, img}: ProjectProps) {
 
   return (
-    <div className="p-4 bg-white rounded overflow-hidden shadow-md w-100 m-2">
+    <div className="py-4 bg-white rounded overflow-hidden shadow-md w-100 m-2">
       <figure>
         <img src={`/images/projects/${img}.webp`} alt={`project-${name}`} className='w-full'/>
         <figcaption>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
+import SwiftIcons from "../components/SwiftIcons";
 
 function Home() {
   const project = [
@@ -20,17 +21,30 @@ function Home() {
 
 ]
 
+const partnerIcons = [
+  { id: 2, src: 'images/stacks/node.png', alt: 'nodejs' },
+  { id: 3, src: 'images/stacks/javascript.png', alt: 'javascript' },
+  { id: 10, src: 'images/stacks/ts.png', alt: 'typescript' },
+  { id: 4, src: 'images/stacks/c-prog.jpeg', alt: 'typescript' },
+  { id: 5, src: 'images/stacks/python.png', alt: 'python' },
+  { id: 6, src: 'images/stacks/flask.jpeg', alt: 'flask' },
+  { id: 1, src: 'images/stacks/django.jpeg', alt: 'django' },
+  { id: 7, src: 'images/stacks/graphql.png', alt: 'graphql' },
+  { id: 8, src: 'images/stacks/pg.png', alt: 'postgres' },
+  { id: 9, src: 'images/stacks/mongo.jpeg', alt: 'mongodb' },
+];
+
   return (
     <>
       <div className="container">
       <header className={'flex justify-between z-0'}>
-        <a href="/" className="hidden text-2xl p-2 z-0 md:block">
+        <a href="/" className="hidden text-2xl py-2 z-0 md:block">
           GvTech
         </a>
-        <nav className={'flex p-2 text-xl'}>
+        <nav className={'flex py-2 text-md md:text-lg'}>
           <ul className={'flex'}>
             <li className={'mr-4'}>
-              <a href="/">About Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li className={'mr-4'}>
               <a href="#projects">Projects</a>
@@ -45,7 +59,7 @@ function Home() {
         </nav>
       </header>
       <article aria-label="Home">
-      <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }}>
+      <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }} id="about">
       <div className="absolute inset-0 bg-black opacity-50 pt-16"></div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
         <h1 className="text-4xl md:text-6xl text-center font-bold">Hi! I&apos;m Israel.</h1>
@@ -86,7 +100,7 @@ function Home() {
           <img src="images/testimonials/adam.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
           <figcaption className="py-2 leading-tight">
             <p className="text-sm font-medium md:text-md text-start">Adam Eukuilkruit</p>
-            <p className="text-sm md:text-md text-start">Pricipal software engineer</p>
+            <p className="text-sm md:text-md text-start">Principal software engineer</p>
             <figure className="flex py-2">
             <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
             <p className="font-bold mx-1">Compoze labs</p>
@@ -127,6 +141,14 @@ function Home() {
       </div>
     </section>
     <hr/>
+    <section className="py-4">
+      <SwiftIcons  speed={0.5} hoverSpeed={1} shadow={false}>
+       {partnerIcons.map((icon, index) => (
+        <img key={index} src={icon.src} alt={`Icon ${index}`} className="w-[60px] h-[60px] rounded-full" />
+      ))}
+    </SwiftIcons>
+    </section>
+      <hr/>
     <section className="p-4 md:flex" id="skills">
       <hgroup className="w-full">
       <h2 className="text-[0.5rem] md:text-sm text-start font-semibold mt-2">Innovative</h2>
@@ -143,7 +165,9 @@ function Home() {
         </ul>
         <button className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded my-4 border border-black">Learn More</button>
       </div>
-    </section>
+      </section>
+      <hr/>
+
       </article>
     </div>
     </>
