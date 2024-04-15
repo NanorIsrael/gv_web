@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin , faFacebookSquare, faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+import { Link, Navigate, Route, Routes } from 'react-router-dom';
+
 import './App.css';
-import { Navigate, Route, Routes } from 'react-router-dom';
-// import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Home from './pages/Home';
@@ -8,27 +10,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <div className="container">
-      {/* <header className={' z-0'}>
-        <Link to="/" className="hidden text-2xl p-2 z-0 md:block">
-          GvTech
-        </Link>
-        <nav className={'flex p-2 text-xl'}>
-          <ul className={'flex'}>
-            <li className={'mr-4'}>
-              <NavLink to="/">About Me</NavLink>
-            </li>
-            <li className={'mr-4'}>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li className={'mr-4'}>
-              <NavLink to="/blog">Skills</NavLink>
-            </li>
-            <li className={'mr-4'}>
-              <NavLink to="/about">Contact</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </header> */}
+    
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
@@ -48,7 +30,22 @@ function App() {
             <h5 className='font-semibold'>Mobile:</h5>
             <p>+233557084927 / +233271053774</p>
             </div>
+            <div className='py-2'>
+              <Link to="https://www.linkedin.com/in/israelnanor1z" target='_blank' className='mr-4'>
+                <FontAwesomeIcon icon={faLinkedin} size={'2x'}/>
+              </Link>
+              <Link to="https://github.com/NanorIsrael" target='_blank' className='mr-4'>
+                <FontAwesomeIcon icon={faGithubSquare} size={'2x'}/>
+              </Link>
+              <Link to="https://web.facebook.com/israel.nanor.1/" target='_blank' className='mr-4'>
+                <FontAwesomeIcon icon={faFacebookSquare} size={'2x'}/>
+              </Link>
+              <Link to="https://web.facebook.com/israel.nanor.1/" target='_blank' className='mr-4'>
+                <FontAwesomeIcon icon={faTwitterSquare} size={'2x'}/>
+              </Link>
+            </div>
           </address>
+          
         </section>
        <hr/>
        <p className='pt-4'>
