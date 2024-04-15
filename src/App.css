@@ -838,6 +838,10 @@ code {
   width: 60px;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1459,6 +1463,14 @@ code {
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .sm\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .sm\:pt-8 {
+    padding-top: 2rem;
   }
 }
 

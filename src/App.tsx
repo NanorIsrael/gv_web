@@ -19,7 +19,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <footer className='py-12'>
-        <section className='pb-12'>
+        <section className='pb-12 md:flex'>
+          <article>
           <h4 className='text-xl md:text-md font-bold'>Israel Nanor</h4>
           <address>
             <div className='py-2'>
@@ -45,7 +46,22 @@ function App() {
               </Link>
             </div>
           </address>
-          
+          </article>
+        
+          <section className='pt-8 leading-loose md:flex w-[50%]'>
+            <ul className='w-full'>
+              <Link to="/about"><li>About</li></Link>
+              <Link to="/projects"><li>Projets</li></Link>
+              <Link to="/blog"><li>Blog</li></Link>
+              <Link to="/projects"><li>Services</li></Link>
+            </ul>
+            <ul className='w-full'>
+              <a href="#about"><li>Profile</li></a>
+              <a href="#projects"><li>Works</li></a>
+              <a href="#skills"><li>Skills</li></a>
+              <a href="#contact"><li>Contact</li></a>
+            </ul>
+          </section>
         </section>
        <hr/>
        <p className='pt-4'>
