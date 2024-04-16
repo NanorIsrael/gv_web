@@ -931,6 +931,10 @@ code {
   flex-direction: column;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -1551,6 +1555,10 @@ code {
 
   .md\:justify-around {
     justify-content: space-around;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-6xl {
