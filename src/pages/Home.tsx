@@ -32,6 +32,12 @@ const partnerIcons = [
   { id: 9, src: 'images/stacks/mongo.jpeg', alt: 'mongodb' },
 ];
 
+const testimonials = [
+  {remark: "Israel Nanor is truly exeptional and innovative.", img: "adam.jpeg", name: "Adam Eukuilkruit", role: "Principal software engineer"},
+  {remark: "Israel's problem solving skills are unmatched.", img: "timothy.jpeg", name: "Timothy foster", role: "Senior software engineer"},
+  {remark: "I highly recommend Israel for any software development project.", img: "chris.jpeg", name: "Chris Borgen", role: "Senior software engineer"}
+]
+
   return (
     <>
       <div className="container">
@@ -89,55 +95,29 @@ const partnerIcons = [
         </Link>
       </div>
     </section>
-    <section className="py-4 px-2">
-    <h2 className="text-2xl md:text-3xl text-start font-bold mt-2">What They Say</h2>
-    <p className="text-sm md:text-md text-start py-2">Read testimonials from my satified clients and professionals.</p>
+    <section className="py-4 px-2 text-center md:text-start">
+    <h2 className="text-2xl md:text-3xl font-bold mt-2">What They Say</h2>
+    <p className="text-sm md:text-md py-2">Read testimonials from my satified clients and professionals.</p>
       <div className="md:flex justify-around">
-      <div className="py-8 md:max-w-[300px]">
-        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        <p className="text-sm md:text-md text-start py-2 font-medium">Israel Nanor is truly exeptional and innovative.</p>
-        <figure className="my-2 p-1">
-          <img src="images/testimonials/adam.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
-          <figcaption className="py-2 leading-tight">
-            <p className="text-sm font-medium md:text-md text-start">Adam Eukuilkruit</p>
-            <p className="text-sm md:text-md text-start">Principal software engineer</p>
-            <figure className="flex py-2">
-            <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
-            <p className="font-bold mx-1">Compoze labs</p>
-            </figure>
-          </figcaption>
-        </figure> 
-      </div>
-      <div className="py-8 md:max-w-[300px]">
-        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        <p className="text-sm md:text-md text-start py-2 font-semibold">Israel&apos;s problem solving skills are unmatched.</p>
-        <figure className="my-2 p-1">
-          <img src="images/testimonials/timothy.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
-          <figcaption className="py-2 leading-tight">
-            <p className="text-sm font-medium md:text-md text-start">Timothy foster</p>
-            <p className="text-sm md:text-md text-start">Senior software engineer</p>
-            <figure className="flex py-2">
-            <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
-            <p className="font-bold mx-1">Compoze labs</p>
-            </figure>
-          </figcaption>
-        </figure> 
-      </div>
-      <div className="py-8 md:max-w-[300px]">
-        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        <p className="text-sm md:text-md text-start py-2 font-semibold">I highly recommend Israel for any software development project.</p>
-        <figure className="my-2 p-1">
-          <img src="images/testimonials/chris.jpeg" alt="" width={100} height={100} className="block rounded-full border boder-black"/>
-          <figcaption className="py-2 leading-tight">
-            <p className="text-sm font-medium md:text-md text-start">Chris Borgen</p>
-            <p className="text-sm md:text-md text-start">Senior software engineer</p>
-            <figure className="flex py-2">
-            <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
-            <p className="font-bold mx-1">Compoze labs</p>
-            </figure>
-          </figcaption>
-        </figure> 
-      </div>
+      {
+        testimonials.map(person => (
+          <div key={person.name} className="py-8 md:max-w-[300px]">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          <p className="text-sm md:text-md py-2 font-medium">{person.remark}</p>
+          <figure className="my-2 p-1 flex flex-col items-center text-center md:text-start md:items-start">
+            <img src={`images/testimonials/${person.img}`} alt="" width={100} height={100} className="block rounded-full border boder-black"/>
+            <figcaption className="py-2 leading-tight">
+              <p className="text-sm font-medium md:text-md">{person.name}</p>
+              <p className="text-sm md:text-md">{person.role}</p>
+              <figure className="flex py-2 justify-center md:justify-start">
+              <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
+              <p className="font-bold mx-1">Compoze labs</p>
+              </figure>
+            </figcaption>
+          </figure> 
+        </div>
+        ))
+      }
       </div>
     </section>
     <hr/>

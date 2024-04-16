@@ -18,7 +18,7 @@ async function main() {
       // });
       
       sharp(file)
-        // .resize(1000, 800)
+        // .resize(500, 500)
         .toFile(`${outputdir}${image}.webp`, (err, info) => { 
             if (err) {
               console.log(err)

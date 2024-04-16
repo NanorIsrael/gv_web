@@ -1553,12 +1553,24 @@ code {
     flex-wrap: wrap;
   }
 
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:justify-around {
     justify-content: space-around;
   }
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 
   .md\:text-6xl {
