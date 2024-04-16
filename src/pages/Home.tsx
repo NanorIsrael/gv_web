@@ -23,9 +23,7 @@ function Home() {
 
 const partnerIcons = [
   { id: 2, src: 'images/stacks/node.png', alt: 'nodejs' },
-  { id: 3, src: 'images/stacks/javascript.png', alt: 'javascript' },
   { id: 10, src: 'images/stacks/ts.png', alt: 'typescript' },
-  { id: 4, src: 'images/stacks/c-prog.jpeg', alt: 'typescript' },
   { id: 5, src: 'images/stacks/python.png', alt: 'python' },
   { id: 6, src: 'images/stacks/flask.jpeg', alt: 'flask' },
   { id: 1, src: 'images/stacks/django.jpeg', alt: 'django' },
@@ -143,10 +141,10 @@ const partnerIcons = [
       </div>
     </section>
     <hr/>
-    <section className="py-4 z-50">
+    <section className="hidden md:block py-4">
       <SwiftIcons  speed={0.5} hoverSpeed={1} shadow={false}>
        {partnerIcons.map((icon, index) => (
-        <img key={index} src={icon.src} alt={`Icon ${index}`} className="w-[60px] h-[60px] rounded-full" />
+        <img key={index} src={icon.src} alt={`${icon.alt} Icon`} className="w-[80px] h-[80px] rounded-full border-2 border-white bg-white shadow-md" />
       ))}
     </SwiftIcons>
     </section>
@@ -158,7 +156,7 @@ const partnerIcons = [
       </hgroup>
       <div className="w-full">
         <p className="text-sm md:text-md text-start mt-2 xlg:text-lg">With years of experience, I have completed numerous projects and mastered various technologies</p>
-        <ul className="py-4 font-semibold leading-normal">
+        <ul className="py-4 font-semibold text-xs leading-loose  md:text-sm md:leading-6 xlg:text-lg">
           <li><span>✓</span>&nbsp;Frontend programming</li>
           <li><span>✓</span>&nbsp;Backend programming</li>
           <li><span>✓</span>&nbsp;Devops engineering</li>

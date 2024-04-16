@@ -13,12 +13,12 @@ export default function Project({description, url, name, img}: ProjectProps) {
       <figure>
         <img src={`/images/projects/${img}.webp`} alt={`project-${name}`} className='w-full'/>
         <figcaption>
-          <h4 className='font-bold text-md my-2'>
+          <h4 className='font-bold text-md my-2 p-2'>
             <Link target={'_blank'} to={url} className='no-underline'>
              {name}
             </Link>
           </h4>
-          <p>
+          <p className='p-2'>
             {description}
           </p>
         </figcaption>

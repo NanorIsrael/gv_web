@@ -37,10 +37,10 @@ const Marquee = ({ speed, hoverSpeed, shadow, children, ...rest }: Props) => {
 
   return (
   <div className={divCls} role="banner" onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} onFocus={()=> null}>
-    <div className="mx-16 flex items-center min-w-full justify-around md:mx-0" style={{ transform: `translateX(${offset}px)` }}>
+    <div className="flex items-center min-w-full justify-around" style={{ transform: `translateX(${offset}px)` }}>
       {children}
     </div>
-    <div className="mx-16 flex items-center min-w-full justify-around md:mx-0" style={{ transform: `translateX(${offset}px)` }}>
+    <div className="flex items-center min-w-full justify-around" style={{ transform: `translateX(${offset}px)` }}>
       {children}
     </div>
   </div>

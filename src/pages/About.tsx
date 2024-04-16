@@ -1,14 +1,14 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
+
 function About() {
   return (
-    <article aria-label="About" className="p-4 bg-white about">
+    <article aria-label="About" className="container">
       <header className={'flex justify-between z-0'}>
-        <nav className={'flex p-2 text-xl'}>
-          <ul className={'flex'}>
-            <li className={'mr-4'}>
-              <a href="/">Back</a>
-            </li>
-          </ul>
-        </nav>
+        <Link to={'/'} className="p-2 text-2xl">
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </Link>
       </header>
       <section className="flex flex-col items-center p-4">
         <hgroup className="pb-4">
