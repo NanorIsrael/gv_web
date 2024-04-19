@@ -1,14 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin , faFacebookSquare, faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
-import { Link, Navigate, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import './App.css';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Home from './pages/Home';
 
+
 function App() {
+  const location = useLocation();
+  const pathname = location.pathname;
+
   return (
     <div className="container">
     
@@ -54,12 +58,17 @@ function App() {
               <Link to="/blog"><li>Blog</li></Link>
               <Link to="/projects"><li>Services</li></Link>
             </ul>
-            <ul className='w-full leading-loose'>
-              <li><a href="#about">Profile</a></li>
-              <a href="#projects"><li>Works</li></a>
-              <a href="#skills"><li>Skills</li></a>
-              <a href="#contact"><li>Contact</li></a>
-            </ul>
+            {
+              pathname !== '/projects' && (
+                <ul className='w-full leading-loose'>
+                <li><a href="#about">Profile</a></li>
+                <a href="#projects"><li>Works</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#contact"><li>Contact</li></a>
+              </ul>
+              )
+            }
+           
           </section>
         </section>
        <hr/>

@@ -23,7 +23,7 @@
   --HIGHLIGHT-COLOR: #282c34;
   --LINK-COLOR: #000;
   --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-  --LINK-ACTIVE: orange;
+  --LINK-ACTIVE: #000;
   /* BORDERS */
   --BODERS: 1px solid var(--BORDER-COLOR);
   /* FONTS */
@@ -173,5 +173,108 @@ figcaption a:hover, a:focus-visible {
 
   .read_more  {
     margin-left: 0.5em;
+  }
+}
+
+#modal {
+  background-color: #000000;
+  position: fixed;
+  max-height: 55vh;
+  max-width: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  transform: translate(50%, 50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal > div {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+#modal .buttons button {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+}
+
+.loader {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #7449f5;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* Change the color and thickness of the focus border */
+#modal input:focus, textarea:focus {
+  border-color: #d1e1f1; /* Change to your desired color */
+  border-width: 2px; /* Change to your desired thickness */
+  outline: none; /* Remove the default outline */
+}
+
+/* Add a box shadow when the input is focused */
+#modal input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(229, 239, 249, 0.5); /* Change to your desired shadow */
+}
+
+
+@media screen and (max-width: 500px) {
+  #modal {
+    background-color: #456B42;
+    position: fixed;
+    max-height: 50vh;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transform: translate(0%, 50%);
+  }
+
+  .modal {
+    height: 100%;
+    width: 100%;
   }
 }

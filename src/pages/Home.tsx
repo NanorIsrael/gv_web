@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
 import SwiftIcons from "../components/SwiftIcons";
+import Contact from "../components/Contact";
+import { useState } from "react";
 
 function Home() {
+  const [toggleModal, setToggleModal] = useState(false);
+
+
   const project = [
     { 
     id: 1,
@@ -38,6 +43,9 @@ const testimonials = [
   {remark: "I highly recommend Israel for any software development project.", img: "chris.jpeg", name: "Chris Borgen", role: "Senior software engineer"}
 ]
 
+const handleContact = () => {
+  setToggleModal(() => !toggleModal)
+}
   return (
     <>
       <div className="container">
@@ -110,7 +118,7 @@ const testimonials = [
               <p className="text-sm font-medium md:text-md">{person.name}</p>
               <p className="text-sm md:text-md">{person.role}</p>
               <figure className="flex py-2 justify-center md:justify-start">
-              <img src={"images/testimonials/compoze.jpeg"} alt="" width={20} height={2} className="rounded max-h-4 self-center"/>
+              <img src={"images/testimonials/compoze.jpeg"} alt="compoze logo" width={20} height={2} className="rounded max-h-4 self-center"/>
               <p className="font-bold mx-1">Compoze labs</p>
               </figure>
             </figcaption>
@@ -177,9 +185,10 @@ const testimonials = [
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
       <p className="text-sm md:text-lg">Reach out for collaborations or hiring opportunities.</p>
       <div className="flex my-8 justify-center">
-          <button className="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2">Contact</button>
+          <button className="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2" onClick={handleContact}>Contact</button>
           <button className="bg-white text-black hover:bg-black hover:text-white font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
         </div>
+        <Contact setToggleModal={setToggleModal} toggleModal={toggleModal}/>
       </section>
       </article>
     </div>
