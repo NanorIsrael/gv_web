@@ -55,12 +55,14 @@ function Projects() {
         </Link>
       </header>
       <article aria-label="Projects" className='bg-gray-100'>
-       { project.map(p => <Project
+       { 
+       project.map(p => <Project
         description={p.description}
         url={p.url} 
         name={p.name}
         img={p.img}
-        key={p.id}/>)}
+        key={p.id}/>)
+      }
        </article>
     </>
   );

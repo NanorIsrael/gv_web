@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 import { useState } from "react";
 
 function Home() {
-  const [toggleModal, setToggleModal] = useState(false);
+  const [toggleModal, setToggleModal] = useState(true);
 
 
   const project = [

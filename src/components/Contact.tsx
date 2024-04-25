@@ -7,7 +7,7 @@ type ContactProps = {
   
 export default function Contact({toggleModal, setToggleModal}: ContactProps) {
 	const handleCancel = () => {
-		setToggleModal(true)
+		setToggleModal(false)
 	}
 
 
