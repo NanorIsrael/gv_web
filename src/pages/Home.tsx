@@ -48,9 +48,9 @@ const handleContact = () => {
 }
   return (
     <>
-      <div className="container">
-      <header className={'flex justify-between z-50'}>
-        <a href="/" className="hidden text-2xl py-2 md:block">
+     <header className={'z-50'}>
+      <div className="container flex justify-between primary-bg h-full py-2">
+      <a href="/" className="hidden text-2xl p-2 md:block">
           GvTech
         </a>
         <nav className={'flex py-2 text-md md:text-lg'}>
@@ -69,7 +69,10 @@ const handleContact = () => {
             </li>
            </ul> 
         </nav>
+      </div>
       </header>
+      <div className="container">
+     
       <article aria-label="Home">
       <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }} id="about">
       <div className="absolute inset-0 bg-black opacity-50 pt-16"></div>

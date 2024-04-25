@@ -16,7 +16,7 @@ function App() {
   const whiteListedPath = ['/projects', '/about']
 
   return (
-    <div className="container">
+    <div className="">
     
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,8 +25,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <footer className='py-12'>
-        <section className='pb-12 md:flex'>
+      <footer className=''>
+        <section className='py-8 md:flex container primary-bg'>
           <article>
           <h4 className='text-xl md:text-md font-bold'>Israel Nanor</h4>
           <address className='leading-loose'>
@@ -73,8 +73,8 @@ function App() {
            
           </section>
         </section>
+       <p className='container primary-bg h-full'>
        <hr/>
-       <p className='pt-4'>
        &copy; GraceValley Technologies
        </p>
       </footer>

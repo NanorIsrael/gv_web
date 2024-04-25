@@ -50,9 +50,12 @@ function Projects() {
   return (
     <>
      <header className={'flex justify-between z-0'}>
+      <nav className='container primary-bg'>
         <Link to={'/'} className="p-2 text-2xl">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
+      </nav>
+        
       </header>
       <article aria-label="Projects" className='bg-gray-100'>
        { 

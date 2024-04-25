@@ -6,9 +6,11 @@ function About() {
   return (
     <>
     <header className={'flex justify-between z-0'}>
-        <Link to={'/'} className="p-2 text-2xl">
+      <nav className="container primary-bg">
+      <Link to={'/'} className="p-2 text-2xl">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>
+      </nav>
     </header>
     <article aria-label="About" className="container h-full">
       <section className="flex flex-col items-center justify-center p-8">
