@@ -83,7 +83,7 @@ const handleContact = () => {
         <p className="text-lg md:text-xl text-center max-w-[70%]">With a passion for technology and a knack for problem-solving, I am revolutionizing the digital landscape. My expertise in full-stack development allows me to create seamless and innovative solutions that drive business growth.</p>
         <div className="flex mt-8">
           <Link to="/about">
-            <button className="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4">Learn More</button>
+            <button className="primary-bg hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4">Learn More</button>
           </Link>
           <button className="bg-white hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded">Collaborate</button>
         </div>
@@ -188,7 +188,7 @@ const handleContact = () => {
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
       <p className="text-sm md:text-lg">Reach out for collaborations or hiring opportunities.</p>
       <div className="flex my-8 justify-center">
-          <button className="bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2" onClick={handleContact}>Contact</button>
+          <button className="hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2 primary-bg" onClick={handleContact}>Contact</button>
           <button className="bg-white text-black hover:bg-black hover:text-white font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
         </div>
         <Contact setToggleModal={setToggleModal} toggleModal={toggleModal}/>
