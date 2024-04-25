@@ -12,7 +12,8 @@ import Home from './pages/Home';
 function App() {
   const location = useLocation();
   const pathname = location.pathname;
-  const whiteListedPath = pathname !== '/projects' && pathname !== '/about'
+
+  const whiteListedPath = ['/projects', '/about']
 
   return (
     <div className="container">
@@ -60,7 +61,7 @@ function App() {
               <Link to="/projects"><li>Services</li></Link>
             </ul>
             {
-              whiteListedPath && (
+              !whiteListedPath.includes(pathname) && (
                 <ul className='w-full leading-loose'>
                 <li><a href="#about">Profile</a></li>
                 <a href="#projects"><li>Works</li></a>

@@ -34,7 +34,7 @@ export const Modal = ({ children, xtraclass, hidden }: ModalProps) => {
   }, [hidden]);
 
   return createPortal(
-    <section className={'p-0 m-0 modal ' + xtraclass}>{children}</section>,
+    <section className={'p-0 m-0 modal' + xtraclass}>{children}</section>,
     modalref.current,
   );
 };
