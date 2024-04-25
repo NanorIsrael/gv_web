@@ -57,7 +57,7 @@ function Projects() {
       </nav>
         
       </header>
-      <article aria-label="Projects" className='bg-gray-100'>
+      <article aria-label="Projects" className='bg-gray-100 container'>
        { 
        project.map(p => <Project
         description={p.description}
