@@ -49,12 +49,12 @@ const handleContact = () => {
   return (
     <>
      <header className={'z-50 py-[36px]'}>
-      <div className="container rounded-[70px] flex justify-between primary-bg h-full py-2">
-      <a href="/" className="hidden text-2xl p-2 md:block">
+      <div className="container rounded-[70px] flex justify-between primary-bg h-full py-2 items-center">
+      <a href="/" className=" cursor-pointer hidden text-2xl p-2 md:block">
           GvTech
         </a>
-        <nav className={'flex py-2 text-md md:text-lg'}>
-          <ul className={'flex'}>
+        <nav className={'w-full md:w-[50%] flex py-2 text-[0.875rem] md:text-md'}>
+          <ul className={'flex w-full justify-between'}>
             <li className={'mr-4'}>
               <a href="#about">About Me</a>
             </li>

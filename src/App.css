@@ -756,6 +756,10 @@ code {
   width: 100%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -892,6 +896,11 @@ code {
 .bg-\[\#fff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#525AA0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 90 160 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1059,6 +1068,10 @@ code {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[0\.875rem\] {
+  font-size: 0.875rem;
 }
 
 .font-bold {
@@ -1287,6 +1300,10 @@ code {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
   }
 
   .md\:max-w-\[300px\] {
