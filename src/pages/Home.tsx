@@ -71,7 +71,7 @@ const handleContact = () => {
         </nav>
       </div>
       </header>
-      <div className="container bg-[#f3f3f3]">
+      <div className="container bg-[#fff]">
      
       <article aria-label="Home ">
       <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }} id="about">
@@ -197,16 +197,19 @@ const handleContact = () => {
         </div>
         <div className="clip-b"></div>
       </section>
-      <section className="bg-[#f2f3f4] text-center py-8" id="contact">
-        <div className="clip-b"></div>
-      <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
+      <section className="bg-[#f2f3f4] text-center" id="contact">
+        <div className="mygrad"></div>
+        <div className="py-12 px-8">
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
       <p className="text-sm md:text-lg">Reach out for collaborations or hiring opportunities.</p>
       <div className="flex my-8 justify-center">
           <button className="hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2 primary-bg" onClick={handleContact}>Contact</button>
           <button className="bg-white text-black hover:bg-black hover:text-white font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
         </div>
         <Contact setToggleModal={setToggleModal} toggleModal={toggleModal}/>
-        <div className="mygrad"></div>
+        </div>
+     
+        <div className="clip-b"></div>
       </section>
       </article>
     </div>

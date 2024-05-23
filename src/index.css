@@ -283,7 +283,7 @@ figcaption a:hover, a:focus-visible {
 
 
 .mygrad {
-  background-color:  #F3F3F3;
+  background-color:  #FFF;
   clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
   height: 50px;
   border: none;
@@ -291,7 +291,7 @@ figcaption a:hover, a:focus-visible {
 
 .clip-b{
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
-  background-color:  #F3F3F3;
+  background-color:  #FFF;
   height: 50px;
   border: none;
 }
