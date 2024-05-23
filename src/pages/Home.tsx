@@ -71,9 +71,9 @@ const handleContact = () => {
         </nav>
       </div>
       </header>
-      <div className="container">
+      <div className="container bg-[#f3f3f3]">
      
-      <article aria-label="Home">
+      <article aria-label="Home ">
       <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }} id="about">
       <div className="absolute inset-0 bg-black opacity-50 pt-16"></div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
@@ -106,8 +106,10 @@ const handleContact = () => {
         </Link>
       </div>
     </section>
-    <section className="py-4 px-2 text-center md:text-start">
-    <h2 className="text-2xl md:text-3xl font-bold mt-2">What They Say</h2>
+    <section className="my-12 text-center md:text-start bg-[#202229] text-white">
+      <div className="mygrad"></div>
+      <div className="py-16 px-8">
+      <h2 className="text-2xl md:text-3xl font-bold mt-2">What They Say</h2>
     <p className="text-sm md:text-md py-2">Read testimonials from my satified clients and professionals.</p>
       <div className="md:flex justify-around">
       {
@@ -126,10 +128,13 @@ const handleContact = () => {
               </figure>
             </figcaption>
           </figure> 
+
         </div>
         ))
       }
       </div>
+      </div>
+      <div className="clip-b"></div>
     </section>
     <hr/>
     <section className="hidden md:block py-4">
@@ -140,7 +145,9 @@ const handleContact = () => {
     </SwiftIcons>
     </section>
       <hr/>
-    <section className="p-8 md:flex" id="skills">
+    <section className="bg-[#FFBE2E]" id="skills bg-">
+    <div className="mygrad"></div>
+      <div className="py-16 px-12 md:flex">
       <hgroup className="w-full">
       <h2 className="text-[0.5rem] md:text-sm text-start font-semibold mt-2">Innovative</h2>
       <h3 className="text-xl md:text-2xl lg:text-3xl text-start font-bold mt-2 pr-8">Professional Achievements and Expertise.</h3>
@@ -156,10 +163,14 @@ const handleContact = () => {
         </ul>
         <button className="bg-white hover:bg-white hover:text-black text-black font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
       </div>
+      </div>
+      <div className="clip-b"></div>
       </section>
       <hr/>
-      <section className="p-8 md:flex flex-row-reverse" id="skills">
-      <div className="flex flex-col w-full">
+      <section className="bg-[#edefff]" id="skills">
+      <div className="mygrad"></div>
+        <div className="py-12 px-8 flex flex-col-reverse md:flex-row-reverse">
+        <div className="flex flex-col w-full">
         <hgroup className="w-full">
         <h2 className="text-[0.5rem] md:text-sm text-start font-semibold mt-2">Imaginative</h2>
         <h3 className="text-xl md:text-2xl lg:text-3xl text-start font-bold mt-2">Transforming Software Engineering with Unique Approaches.</h3>
@@ -183,8 +194,11 @@ const handleContact = () => {
        width={600}
        />
       </div>
+        </div>
+        <div className="clip-b"></div>
       </section>
       <section className="text-center py-8" id="contact">
+        <div className="clip-b"></div>
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
       <p className="text-sm md:text-lg">Reach out for collaborations or hiring opportunities.</p>
       <div className="flex my-8 justify-center">
@@ -192,6 +206,7 @@ const handleContact = () => {
           <button className="bg-white text-black hover:bg-black hover:text-white font-bold py-2 px-4 rounded my-2 border border-black">Learn More</button>
         </div>
         <Contact setToggleModal={setToggleModal} toggleModal={toggleModal}/>
+        <div className="mygrad"></div>
       </section>
       </article>
     </div>
