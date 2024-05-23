@@ -25,7 +25,7 @@ export default function Contact({toggleModal, setToggleModal}: ContactProps) {
 				<label htmlFor="email" className="flex flex-start">
 					Email
 				</label>
-				<input id={"email"} type="text" className="p-2 w-full border-2 border-black " />
+				<input id={"email"} type="email" className="p-2 w-full border-2 border-black " />
 				</div>
 				<div className="text-sm py-2">
 				<label htmlFor="email" className="flex flex-start">

@@ -31,10 +31,12 @@ function App() {
           <h4 className='text-xl md:text-md font-bold'>Israel Nanor</h4>
           <address className='leading-loose'>
             <div>
-            <FontAwesomeIcon icon={faEnvelope} /><span className='mx-2'>israelnanor88@gmail.com</span>
+            <FontAwesomeIcon icon={faEnvelope} /><a className='mx-2 hover:text-[#f3f3f3] hover:font-[600]' href="mailto:israelnanor88@gmail.com">
+              Email Me
+            </a>
             </div>
             <div>
-            <FontAwesomeIcon icon={faMobile} /><span className='mx-2'>+233557084927 / +233271053774</span>
+            <FontAwesomeIcon icon={faMobile} /><a href='tel:+233557084927' className='mx-2 hover:text-[#f3f3f3] hover:font-[600]'>Call Me</a>
             </div>
             <div className='flex'>
               <Link to="https://www.linkedin.com/in/israelnanor1z" target='_blank' className='mr-4'>
