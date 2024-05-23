@@ -1112,6 +1112,31 @@ code {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#3defff\] {
+  --tw-text-opacity: 1;
+  color: rgb(61 239 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#edefff\] {
+  --tw-text-opacity: 1;
+  color: rgb(237 239 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#aab1e4\] {
+  --tw-text-opacity: 1;
+  color: rgb(170 177 228 / var(--tw-text-opacity));
+}
+
+.text-\[\#dae4aa\] {
+  --tw-text-opacity: 1;
+  color: rgb(218 228 170 / var(--tw-text-opacity));
+}
+
+.text-\[\#aacbe4\] {
+  --tw-text-opacity: 1;
+  color: rgb(170 203 228 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }

@@ -50,8 +50,8 @@ const handleContact = () => {
     <>
      <header className={'z-50 py-[36px]'}>
       <div className="container rounded-[70px] flex justify-between primary-bg h-full py-2 items-center">
-      <a href="/" className=" cursor-pointer hidden text-2xl p-2 md:block">
-          GvTech
+      <a href="/" className="text-[#aacbe4] cursor-pointer hidden text-2xl p-2 md:block">
+          Gv<strong className="text-[#dae4aa]">Tech</strong>
         </a>
         <nav className={'w-full md:w-[50%] flex py-2 text-[0.875rem] md:text-md'}>
           <ul className={'flex w-full justify-between'}>
@@ -74,9 +74,9 @@ const handleContact = () => {
       <div className="container bg-[#fff]">
      
       <article aria-label="Home ">
-      <div className="relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }} id="about">
-      <div className="absolute inset-0 bg-black opacity-50 pt-16"></div>
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
+      <div className="rounded-[70px] relative bg-cover bg-center h-screen z-1000" style={{ backgroundImage: 'url("Israel_Image.png")', paddingTop: '60px' }} id="about">
+      <div className="rounded-[70px] absolute inset-0 bg-black opacity-50 pt-16"></div>
+      <div className="rounded-[70px] absolute inset-0 flex flex-col justify-center items-center text-white">
         <h1 className="text-4xl md:text-6xl text-center font-bold">Hi! I&apos;m Israel.</h1>
         <h2 className="text-2xl md:text-3xl text-center font-bold">An Innovative Software Engineer</h2>
         <p className="text-lg md:text-xl text-center mt-4">Creating Digital Solutions</p>
