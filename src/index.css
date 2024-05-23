@@ -14,7 +14,7 @@
 }
 .primary-bg {
   padding: 1em 2em;
-  background-color: #15171c;
+  background-color: #202229
 }
 :root{
   /* COLORS */
@@ -80,15 +80,16 @@ article {
 header {
   top: 0;
   margin-top: 0;
-  background-color: #000;
 }
 
 footer, header {
   position: sticky;
-  background-color: hsla(223, 14%, 10%, 0.98);
   color: #FFF;
   z-index: 0;
-  
+}
+
+footer {
+  background-color: hsla(223, 14%, 10%, 0.98);
 }
 img {
   display: block;

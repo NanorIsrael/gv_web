@@ -48,8 +48,8 @@ const handleContact = () => {
 }
   return (
     <>
-     <header className={'z-50'}>
-      <div className="container flex justify-between primary-bg h-full py-2">
+     <header className={'z-50 py-[36px]'}>
+      <div className="container rounded-[70px] flex justify-between primary-bg h-full py-2">
       <a href="/" className="hidden text-2xl p-2 md:block">
           GvTech
         </a>
@@ -137,7 +137,7 @@ const handleContact = () => {
       <div className="clip-b"></div>
     </section>
     <hr/>
-    <section className="hidden md:block py-4">
+    <section className="hidden md:block py-4" id="skills">
       <SwiftIcons  speed={0.5} hoverSpeed={1} shadow={false}>
        {partnerIcons.map((icon, index) => (
         <img key={index} src={icon.src} alt={`${icon.alt} Icon`} className="w-[80px] h-[80px] rounded-full border-2 border-white bg-white shadow-md" />
@@ -167,7 +167,7 @@ const handleContact = () => {
       <div className="clip-b"></div>
       </section>
       <hr/>
-      <section className="bg-[#edefff]" id="skills">
+      <section className="bg-[#edefff]">
       <div className="mygrad"></div>
         <div className="py-12 px-8 flex flex-col-reverse md:flex-row-reverse">
         <div className="flex flex-col w-full">

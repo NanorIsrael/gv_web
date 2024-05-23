@@ -49,8 +49,8 @@ function Projects() {
 ]
   return (
     <>
-     <header className={'flex justify-between z-0'}>
-      <nav className='container primary-bg'>
+     <header className={'flex justify-between z-0 py-[36px]'}>
+      <nav className='container primary-bg rounded-[70px]'>
         <Link to={'/'} className="p-2 text-2xl">
           <FontAwesomeIcon icon={faArrowLeft} />
         </Link>

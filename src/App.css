@@ -704,6 +704,10 @@ code {
   margin-top: 2rem;
 }
 
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
 .block {
   display: block;
 }
@@ -811,6 +815,10 @@ code {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[70px\] {
+  border-radius: 70px;
 }
 
 .border {
@@ -969,6 +977,16 @@ code {
   padding-right: 3rem;
 }
 
+.py-\[70px\] {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.py-\[36px\] {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -995,6 +1013,10 @@ code {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[70px\] {
+  padding-top: 70px;
 }
 
 .text-center {
