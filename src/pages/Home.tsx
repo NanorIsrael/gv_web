@@ -145,7 +145,7 @@ const handleContact = () => {
     </SwiftIcons>
     </section>
       <hr/>
-    <section className="bg-[#FFBE2E]" id="skills bg-">
+    <section className="bg-[#fff7e1]" id="skills bg-">
     <div className="mygrad"></div>
       <div className="py-16 px-12 md:flex">
       <hgroup className="w-full">
@@ -197,7 +197,7 @@ const handleContact = () => {
         </div>
         <div className="clip-b"></div>
       </section>
-      <section className="text-center py-8" id="contact">
+      <section className="bg-[#f2f3f4] text-center py-8" id="contact">
         <div className="clip-b"></div>
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mt-2">Seasoned Fullstack Software Engineer</h3>
       <p className="text-sm md:text-lg">Reach out for collaborations or hiring opportunities.</p>

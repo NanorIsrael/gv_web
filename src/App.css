@@ -866,6 +866,21 @@ code {
   background-color: rgb(237 239 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#fff7e1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f3f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f2f3f4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 243 244 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
