@@ -6,8 +6,11 @@ const path = require('path')
 const inputdir = path.join(__dirname, '/projects/')
 const outputdir = path.join(__dirname, '../public/images/projects/')
 async function main() {
-  const images = ['cimoviez', 'rw', 'tenzies', 'truhair', 'bistro', 'rwhome', 'bsy-link', 'software']
-  // const images = ['']
+  const images = [
+    'cimoviez', 'rw', 'tenzies', 'truhair',
+    'bistro', 'rwhome', 'bsy-link',
+    'geminichatbot'
+  ]
 
 
   for (let image of images) {

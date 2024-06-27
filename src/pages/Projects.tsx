@@ -18,6 +18,14 @@ function Projects() {
     img: "rw",
   },
   {
+    id: 6,
+    url: "#",
+    name:'photo genius', 
+    description:`${"Allows you to upload a photo and ask any question about the photo.\
+    This application uses gemini api."}`,
+    img: "geminichatbot",
+  },
+  {
     id: 2,
     url: "https://nanorisrael.github.io/movie_store/",
     name:'cimoviez', 
