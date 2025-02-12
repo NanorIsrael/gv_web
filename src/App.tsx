@@ -7,6 +7,7 @@ import './App.css';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Home from './pages/Home';
+import { useEffect } from 'react';
 
 
 function App() {
@@ -14,6 +15,11 @@ function App() {
   const pathname = location.pathname;
 
   const whiteListedPath = ['/projects', '/about']
+
+  useEffect(() => {
+    const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', 'dark')
+    }, [])
 
   return (
     <div className="">

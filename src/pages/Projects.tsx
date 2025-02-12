@@ -18,6 +18,13 @@ function Projects() {
     img: "rw",
   },
   {
+    id: 7,
+    url: "https://www.pricedafom.com/",
+    name:'pricedafom', 
+    description:`${"An e-commerce platform designed to provide a seamless online shopping experience. The platform enables businesses to showcase their products, manage inventory, and facilitate secure transactions, while customers can browse, search, and purchase items effortlessly."}`,
+    img: "pricedafom",
+  },
+  {
     id: 6,
     url: "#",
     name:'photo genius', 
