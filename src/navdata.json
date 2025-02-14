@@ -1,0 +1,422 @@
+[
+    {
+        "id": "5b2e7166-8258-4d7e-9e5c-e26f6c13081a",
+        "name": "Beauty Products",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom_-_perfumes_category.jpg",
+        "description": "",
+        "quantity": 38,
+        "subcategory": [
+            {
+                "id": "64fbc367-7651-4bbe-94dc-b3bc3c66a003",
+                "name": "Wigs",
+                "description": "",
+                "category": "Beauty Products"
+            },
+            {
+                "id": "1dcc7cb0-96f7-4409-bd0c-ff57f8515c1d",
+                "name": "Lipgloss",
+                "description": "",
+                "category": "Beauty Products"
+            }
+        ]
+    },
+    {
+        "id": "f60a3df1-6e6b-4e59-bf31-b4a5fc90f46c",
+        "name": "Construction",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom-construction_equipmets.jpg",
+        "description": "Construction",
+        "quantity": 74,
+        "subcategory": [
+            {
+                "id": "e3945e8d-ef9f-4cf0-a066-99c6b832cfca",
+                "name": "Wire Mesh",
+                "description": "",
+                "category": "Construction"
+            },
+            {
+                "id": "b35f0764-6272-40cc-8ed7-89b68ae0deed",
+                "name": "Drilling Machine",
+                "description": "Drilling Machine",
+                "category": "Construction"
+            },
+            {
+                "id": "b2f0ba96-c036-40ad-9b8c-6bac76b6eb3d",
+                "name": "Helmet",
+                "description": "",
+                "category": "Construction"
+            },
+            {
+                "id": "a387f165-6213-4c0f-b579-ea219a1f1d8e",
+                "name": "Pipes",
+                "description": "",
+                "category": "Construction"
+            },
+            {
+                "id": "30e4930d-1e86-474f-bb1c-e4feaa4299eb",
+                "name": "Hammer",
+                "description": "",
+                "category": "Construction"
+            }
+        ]
+    },
+    {
+        "id": "f8a4f603-3165-461b-bbe7-14e8185ab13c",
+        "name": "Electronics",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom-tv.jpg",
+        "description": "Electronics",
+        "quantity": 88,
+        "subcategory": [
+            {
+                "id": "de5c845c-547d-4f6e-85e4-d51a4bc2c45c",
+                "name": "Games",
+                "description": "",
+                "category": "Electronics"
+            },
+            {
+                "id": "bf63fe27-75b9-4a2e-9d8a-ad8228744c24",
+                "name": "Television",
+                "description": "",
+                "category": "Electronics"
+            },
+            {
+                "id": "8219923d-6547-4ed5-8b09-9110b3fef537",
+                "name": "Laptops & Computers",
+                "description": "",
+                "category": "Electronics"
+            },
+            {
+                "id": "7e5489dd-dc62-43de-bc17-43be3d5f6cc2",
+                "name": "Computer Accessories",
+                "description": "",
+                "category": "Electronics"
+            },
+            {
+                "id": "5dcb89b2-6ef7-4c23-bd95-514cbcb63f61",
+                "name": "Mobile Phones",
+                "description": "",
+                "category": "Electronics"
+            },
+            {
+                "id": "3fdb0f12-13ad-44f3-933c-1f0c642d4e54",
+                "name": "Phones & Tablets",
+                "description": "",
+                "category": "Electronics"
+            },
+            {
+                "id": "382d8e39-8270-4b8a-b327-43e8d56e5e70",
+                "name": "Laptops",
+                "description": "",
+                "category": "Electronics"
+            }
+        ]
+    },
+    {
+        "id": "cc5481bc-61dc-4fb2-8081-200abe516760",
+        "name": "Fashion",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/cloth.jpg",
+        "description": "Fahion",
+        "quantity": 35,
+        "subcategory": [
+            {
+                "id": "cde17c42-d45b-4884-8594-d0fdb6340fe6",
+                "name": "Men's Suit",
+                "description": "Men's Suit",
+                "category": "Fashion"
+            },
+            {
+                "id": "a23bc7c6-0fe3-40aa-913c-e071b88b641d",
+                "name": "Men's Jeans",
+                "description": "Men's Jeans",
+                "category": "Fashion"
+            },
+            {
+                "id": "99d614e5-7677-41d0-94bc-ba8eedd41b0b",
+                "name": "Office Skirt",
+                "description": "Office Skirt",
+                "category": "Fashion"
+            },
+            {
+                "id": "7d895bc6-bc01-4cfc-ad5c-908af0ed0817",
+                "name": "Perfume",
+                "description": "",
+                "category": "Fashion"
+            },
+            {
+                "id": "67b5cece-66c9-4048-970c-01a1ac2920ef",
+                "name": "Men's Fabric",
+                "description": "",
+                "category": "Fashion"
+            },
+            {
+                "id": "60a9a10c-b876-4b89-aac1-7abb40a92e65",
+                "name": "Men's Underwear",
+                "description": "Men's Underwear",
+                "category": "Fashion"
+            },
+            {
+                "id": "50a2aa3a-82f7-4eec-9850-951ff3ab6e21",
+                "name": "Men's Shirt",
+                "description": "Men's Shirt",
+                "category": "Fashion"
+            },
+            {
+                "id": "b125c6bb-d061-49c0-a672-88b7c382a33d",
+                "name": "Women's Suit",
+                "description": "Women's Suit",
+                "category": "Fashion"
+            },
+            {
+                "id": "4e7b7e87-752c-4c86-84bb-c376cf267d69",
+                "name": "Shoes",
+                "description": "Shoes",
+                "category": "Fashion"
+            },
+            {
+                "id": "2f0a697b-4472-4f39-98b5-12f60cde93a6",
+                "name": "Women's Underwear",
+                "description": "Women's Underwear",
+                "category": "Fashion"
+            },
+            {
+                "id": "156c9308-4e4a-4742-b76b-295bb546d651",
+                "name": "Women Items",
+                "description": "",
+                "category": "Fashion"
+            },
+            {
+                "id": "b04b56e0-7058-47b6-85ac-d2b72f952e48",
+                "name": "Bags",
+                "description": "",
+                "category": "Fashion"
+            }
+        ]
+    },
+    {
+        "id": "5c1a6f31-a998-4a0b-ad35-24f3e33b3582",
+        "name": "Food",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom_-_Fish_and_Meat.jpg",
+        "description": "Food items",
+        "quantity": 62,
+        "subcategory": [
+            {
+                "id": "83678226-bcbe-47d5-822b-055410c1ec5d",
+                "name": "Fish and Meat",
+                "description": "",
+                "category": "Food"
+            }
+        ]
+    },
+    {
+        "id": "57bec3df-966f-4243-93e7-ebd9abfb84b6",
+        "name": "Furniture",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom-furniture.jpg",
+        "description": "Furniture",
+        "quantity": 54,
+        "subcategory": [
+            {
+                "id": "e2398ce9-e23a-4de7-91d6-bb1c79d70f5e",
+                "name": "Office Furniture",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "d135147f-cb84-48f5-a4eb-170b3289cf2f",
+                "name": "OUTDOOR BENCH",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "9fc3dac2-68ad-484f-b369-8a798b0fe6a2",
+                "name": "Couch",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "713dff72-4803-4420-ba85-68c3ca0c059c",
+                "name": "Chairs",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "5a062b12-d095-46a9-9d53-ef1502a96460",
+                "name": "CHAIRS",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "52b27f29-0479-4b85-9301-183b301dca5c",
+                "name": "Bedding",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "46f11ab3-2172-417b-a5e8-a65e9d992bd1",
+                "name": "Drawer",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "0a034ecb-c742-4ca2-a9ed-35e1cc9bf939",
+                "name": "WORKSTATION SET UP",
+                "description": "",
+                "category": "Furniture"
+            },
+            {
+                "id": "09634e07-da34-4630-a810-52dd20c4f9d1",
+                "name": "DESK ORGANIZER",
+                "description": "",
+                "category": "Furniture"
+            }
+        ]
+    },
+    {
+        "id": "544f3c03-c00b-48b9-9f49-61a7f2c1f3aa",
+        "name": "Health and Sports",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom-health_and_sports.png",
+        "description": "Health and Sports",
+        "quantity": 20,
+        "subcategory": [
+            {
+                "id": "df876171-0043-4b65-963d-4f4a9f484ae2",
+                "name": "Basketballs",
+                "description": "",
+                "category": "Health and Sports"
+            },
+            {
+                "id": "d5f8efd9-a144-4d6a-a2f0-05eb58171d14",
+                "name": "Dumbbells",
+                "description": "",
+                "category": "Health and Sports"
+            },
+            {
+                "id": "b723b08d-de03-4079-9a8c-1e4fa64ba803",
+                "name": "Bicycles",
+                "description": "",
+                "category": "Health and Sports"
+            },
+            {
+                "id": "ab2e16d7-d869-4621-8940-5736b030cc35",
+                "name": "Footballs",
+                "description": "",
+                "category": "Health and Sports"
+            },
+            {
+                "id": "70df0fa9-1b2f-42a9-929c-f5344ae0cc9a",
+                "name": "Stetoscopes",
+                "description": "",
+                "category": "Health and Sports"
+            },
+            {
+                "id": "078aab6e-3adf-48fe-9e4d-7f976fed5982",
+                "name": "Massage",
+                "description": "",
+                "category": "Health and Sports"
+            }
+        ]
+    },
+    {
+        "id": "3f522a1d-1c66-4aa6-895b-47b06982dae7",
+        "name": "Home Appliances",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom-home_appliances.jpg",
+        "description": "Home Appliances",
+        "quantity": 94,
+        "subcategory": [
+            {
+                "id": "82a22bb3-960b-4368-b6e8-a3ca367ba695",
+                "name": "Toasters",
+                "description": "",
+                "category": "Home Appliances"
+            },
+            {
+                "id": "c7b46c56-2f07-4d91-b4ac-527e4663de5b",
+                "name": "Microwaves",
+                "description": "",
+                "category": "Home Appliances"
+            },
+            {
+                "id": "a64713a4-8e46-42e5-8a72-146bda1c0d96",
+                "name": "Refrigerators",
+                "description": "",
+                "category": "Home Appliances"
+            },
+            {
+                "id": "8286700f-6c15-4f49-b1d5-10fd028bd336",
+                "name": "Kettles",
+                "description": "",
+                "category": "Home Appliances"
+            },
+            {
+                "id": "3d21a434-208d-49d4-8671-d61d3af28f36",
+                "name": "Burners",
+                "description": "",
+                "category": "Home Appliances"
+            },
+            {
+                "id": "32d785a1-e45f-4205-a776-e2b665b7c11a",
+                "name": "Blenders",
+                "description": "",
+                "category": "Home Appliances"
+            }
+        ]
+    },
+    {
+        "id": "735a240d-f60e-47ac-9fb9-5756af836c82",
+        "name": "Home Decor",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/priced-home_decor.jpg",
+        "description": "",
+        "quantity": 38,
+        "subcategory": [
+            {
+                "id": "955f6801-11d4-4f48-8d7a-2a3510b8e9fd",
+                "name": "Beddings",
+                "description": "",
+                "category": "Home Decor"
+            }
+        ]
+    },
+    {
+        "id": "91e459fa-478a-4982-8904-58cc0ec4077f",
+        "name": "Vehicles",
+        "image": "https://pricedafom-bucket.s3.amazonaws.com/category_images/pricedafom-vehicles.jpeg",
+        "description": "Vehicles",
+        "quantity": 63,
+        "subcategory": [
+            {
+                "id": "e3933a65-93ca-4f4c-9c8b-a61dae5e6cb4",
+                "name": "Buses",
+                "description": "",
+                "category": "Vehicles"
+            },
+            {
+                "id": "b2e2475a-fba6-44db-b3ca-c64d2f0ba7e5",
+                "name": "Heavy Equipments",
+                "description": "",
+                "category": "Vehicles"
+            },
+            {
+                "id": "754ac93d-81c1-48c5-ab68-23a55850934d",
+                "name": "Scooters and Motorbikes",
+                "description": "",
+                "category": "Vehicles"
+            },
+            {
+                "id": "6f342b26-3dd9-4b88-8bd8-3676f0680b76",
+                "name": "Trucks and Trailers",
+                "description": "",
+                "category": "Vehicles"
+            },
+            {
+                "id": "6a034aaa-fd1b-4db6-a8de-648156859f97",
+                "name": "Cars",
+                "description": "",
+                "category": "Vehicles"
+            },
+            {
+                "id": "07148706-6031-4efb-99bb-9bb2795a7d13",
+                "name": "Tractors",
+                "description": "",
+                "category": "Vehicles"
+            }
+        ]
+    }
+]
