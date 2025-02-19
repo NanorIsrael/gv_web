@@ -25,9 +25,9 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      <footer className=''>
+      <footer className='max-w-[1170px] mx-auto text-orange-400'>
         <section className='py-8 md:flex primary-bg'>
-          <article>
+          <article className='text-white'>
           <h4 className='text-xl md:text-md font-bold'>Israel Nanor</h4>
           <address className='leading-loose'>
             <div>

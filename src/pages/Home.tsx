@@ -71,7 +71,7 @@ function Home() {
       </div>
       </header> */}
 
-        <article aria-label="Home " >
+        <article aria-label="Home" className="max-w-[1170px] mx-auto">
           <section className="py-40 ">
             <div className="rounded-[70px] h-[500px] overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("Israel_Image.png")'}} id="about">
               <div className="relative h-full overflow-hidden">
