@@ -37,6 +37,9 @@ export default function Header() {
 								className="rounded max-w-[50px] max-h-auto md:w-full md:h-full"
 							/>
 						</Link>
+						<Link className="hidden md:block md:text-md text-blue-600 font-semibold" to="/">
+							<span className=" ">GraceValley Technologies</span>
+						</Link>
 
 						{/* <!-- header top right --> */}
 						{/*  lg:  */}
