@@ -7,6 +7,7 @@ import './App.css';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Home from './pages/Home';
+import Header from './components/Header.tsx/header';
 
 
 function App() {
@@ -17,16 +18,15 @@ function App() {
 
   return (
     <div className="">
-    
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <footer className=''>
-        <section className='py-8 md:flex container primary-bg'>
+        <section className='py-8 md:flex primary-bg'>
           <article>
           <h4 className='text-xl md:text-md font-bold'>Israel Nanor</h4>
           <address className='leading-loose'>

@@ -114,11 +114,6 @@ header {
   margin-top: 0;
 }
 
-footer, header {
-  position: sticky;
-  color: #FFF;
-  z-index: 0;
-}
 
 footer {
   background-color: hsla(223, 14%, 10%, 0.98);
@@ -128,9 +123,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-.home {
+/* .home {
   z-index: 1000;
-}
+} */
 .no_wrap {
   white-space: nowrap;
 }
