@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Project from "../components/Project";
 import SwiftIcons from "../components/SwiftIcons";
 import Contact from "../components/Contact";
