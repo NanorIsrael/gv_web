@@ -28,17 +28,10 @@ function Home() {
 
 
   useEffect(() => {
-
     setTimeout(() => {
       setMounted(true)
-
     }, 500)
   }, [])
-
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-  };
 
   const navVariants = {
     open: {
@@ -106,26 +99,8 @@ function Home() {
   }
   return (
     <>
-        <article aria-label="Home" className="max-w-[1170px] mx-auto">
+        <article aria-label="Home" className="max-w-[1170px] mx-auto bg-gray-100">
           <section className="py-40 ">
-            {/* <div className="rounded-[70px] h-[500px] overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("")'}} id="about">
-              <div className="relative h-full overflow-hidden">
-                <div className="rounded-[70px] absolute inset-0 bg-black opacity-50"></div>
-                <div className="rounded-[70px] absolute inset-0 flex flex-col justify-center items-center text-white">
-                  <p className="text-lg md:text-xl text-center mt-4">Creating Digital Solutions</p>
-                  <p className="text-lg md:text-xl text-center max-w-[70%]">With a passion for technology and a knack for problem-solving, I am revolutionizing the digital landscape. My expertise in full-stack development allows me to create seamless and innovative solutions that drive business growth.</p>
-                  <div className="flex mt-8">
-                    <Link to="/about">
-                      <button className="primary-bg hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4">Learn More</button>
-                    </Link>
-                    <button className="bg-white hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded">Collaborate</button>
-                  </div>
-                </div>
-                </div>
-
-            </div> */}
-
-
           <div className="grid md:grid-cols-3 gap-5 h-[50%] justify-between">
               <motion.div 
                 initial={false}
@@ -137,7 +112,7 @@ function Home() {
                 <motion.ul 
                 variants={navVariants}
                 // animate={ mounted ? "open": "closed" }
-                className=" p-2"
+                className=" p-2 md:p-4"
                 >
                   <motion.li 
                   variants={itemVariants}
