@@ -1032,6 +1032,14 @@ code {
   width: 80%;
 }
 
+.w-\[90\] {
+  width: 90;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -1336,6 +1344,47 @@ code {
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#2563eb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f\] {
+  background-color: #f;
+}
+
+.bg-\[\#f9\] {
+  background-color: #f9;
+}
+
+.bg-\[\#f917\] {
+  background-color: #f917;
+}
+
+.bg-\[\#f91\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 153 17 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f97\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 153 119 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f9731\] {
+  background-color: #f9731;
+}
+
+.bg-\[\#f97316\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1449,6 +1498,16 @@ code {
   padding-right: 0.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1479,6 +1538,10 @@ code {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -1624,6 +1687,20 @@ code {
 .text-orange-400 {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#2563eb\] {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1983,6 +2060,14 @@ code {
     margin-top: 0px;
   }
 
+  .md\:mr-4 {
+    margin-right: 1rem;
+  }
+
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2158,6 +2243,10 @@ code {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
   }
 
   .md\:text-start {
