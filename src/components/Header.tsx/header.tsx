@@ -38,7 +38,7 @@ export default function Header() {
 							/>
 						</Link>
 						<Link className="hidden md:block md:text-md text-blue-600 font-semibold" to="/">
-							<span className=" ">GV Tech</span>
+							<h1 className=" ">GV Tech</h1>
 						</Link>
 
 						{/* <!-- header top right --> */}

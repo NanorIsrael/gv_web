@@ -1,11 +1,70 @@
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import {motion} from 'framer-motion'
 import Project from "../components/Project";
 import SwiftIcons from "../components/SwiftIcons";
 import Contact from "../components/Contact";
-import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin , faFacebookSquare, faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
+
+const useDimensions = (ref: React.RefObject<HTMLDivElement | null>) => {
+  const dimensions = useRef({ width: 0, height: 0 })
+
+  useEffect(() => {
+      if (ref.current) {
+          dimensions.current.width = ref.current.offsetWidth
+          dimensions.current.height = ref.current.offsetHeight
+      }
+  }, [ref])
+
+  return dimensions.current
+}
 
 function Home() {
   const [toggleModal, setToggleModal] = useState(true);
+  const [mounted, setMounted] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null)
+  const { height } = useDimensions(containerRef)
+
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      setMounted(true)
+
+    }, 500)
+  }, [])
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
+
+  const navVariants = {
+    open: {
+        transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+    },
+    closed: {
+        transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  }
+
+  const itemVariants = {
+    open: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            y: { stiffness: 1000, velocity: -100 },
+        },
+    },
+    closed: {
+        y: 50,
+        opacity: 0,
+        transition: {
+            y: { stiffness: 1000 },
+        },
+    },
+}
 
   const project = [
     {
@@ -47,38 +106,12 @@ function Home() {
   }
   return (
     <>
-      {/* <header className={'z-999999 py-[36px]'}>
-      <div className="container rounded-[70px] flex justify-between primary-bg h-full py-2 items-center">
-      <a href="/" className="text-[#aacbe4] cursor-pointer hidden text-2xl p-2 md:block">
-          Gv<strong className="text-[#dae4aa]">Tech</strong>
-        </a>
-        <nav className={'w-full md:w-[50%] flex py-2 text-[0.875rem] md:text-md'}>
-          <ul className={'flex w-full justify-between'}>
-            <li className={'mr-4'}>
-              <a href="#about">About Me</a>
-            </li>
-            <li className={'mr-4'}>
-              <a href="#projects">Projects</a>
-            </li>
-            <li className={'mr-4'}>
-              <a href="#skills">Skills</a>
-            </li>
-            <li className={'mr-4'}>
-              <a href="#contact">Contact</a>
-            </li>
-           </ul> 
-        </nav>
-      </div>
-      </header> */}
-
         <article aria-label="Home" className="max-w-[1170px] mx-auto">
           <section className="py-40 ">
-            <div className="rounded-[70px] h-[500px] overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("Israel_Image.png")'}} id="about">
+            {/* <div className="rounded-[70px] h-[500px] overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url("")'}} id="about">
               <div className="relative h-full overflow-hidden">
                 <div className="rounded-[70px] absolute inset-0 bg-black opacity-50"></div>
                 <div className="rounded-[70px] absolute inset-0 flex flex-col justify-center items-center text-white">
-                  <h1 className="text-4xl md:text-6xl text-center font-bold">Hi! I&apos;m Israel.</h1>
-                  <h2 className="text-2xl md:text-3xl text-center font-bold">An Innovative Software Engineer</h2>
                   <p className="text-lg md:text-xl text-center mt-4">Creating Digital Solutions</p>
                   <p className="text-lg md:text-xl text-center max-w-[70%]">With a passion for technology and a knack for problem-solving, I am revolutionizing the digital landscape. My expertise in full-stack development allows me to create seamless and innovative solutions that drive business growth.</p>
                   <div className="flex mt-8">
@@ -90,7 +123,105 @@ function Home() {
                 </div>
                 </div>
 
-            </div>
+            </div> */}
+
+
+          <div className="grid md:grid-cols-3 gap-5 h-[50%] justify-between">
+              <motion.div 
+                initial={false}
+                animate={ mounted ? "open": "closed" }
+                custom={height}
+                ref={containerRef}
+                className="col-span-2  h-full"
+              >
+                <motion.ul 
+                variants={navVariants}
+                // animate={ mounted ? "open": "closed" }
+                className=" p-2"
+                >
+                  <motion.li 
+                  variants={itemVariants}
+                  className="w-full h-[300px] flex justify-start">
+                    <img 
+                    src="/Israel_Image.png" 
+                    alt="israel's photograph"
+                    className="w-full h-full object-cover rounded-md"
+                    />
+                    <motion.div
+                      className="w-full p-4 my-auto"
+                      initial={false}
+                      animate={ mounted ? "open": "closed" }
+                      custom={height}
+                      ref={containerRef}
+                    >
+                      {/*
+                      <p className="text-md">I am a professional software engineer with 4+ years of experience.
+                        Due to my passion for technology and problem solving, I enjoy creating digital solutions.
+                        I aim at being at the fore-front to cause a revolution in the digital landscape. My experience in
+                        software development allows me to create seamless and innovative solutions that drive business growth.
+                      </p> 
+                      */}
+                      <motion.ul 
+                        className='flex flex-col'
+                        variants={navVariants}
+                        
+                      >
+                        <motion.li
+                          variants={itemVariants}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                            <Link to="https://www.linkedin.com/in/israelnanor1z" target='_blank' className='mr-4'>
+                              <FontAwesomeIcon icon={faLinkedin} size={'2x'} style={{ color: "#2563eb" }}/>
+                            </Link>
+                        </motion.li>
+                        <motion.li
+                          variants={itemVariants}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                            <Link to="https://github.com/NanorIsrael" target='_blank' className='mr-4'>
+                              <FontAwesomeIcon icon={faGithubSquare} size={'2x'} style={{ color: "#F97316" }}/>
+                            </Link>
+                         </motion.li>
+                        <motion.li
+                          variants={itemVariants}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                            <Link to="https://web.facebook.com/israel.nanor.1/" target='_blank' className='mr-4'>
+                              <FontAwesomeIcon icon={faFacebookSquare} size={'2x'} style={{ color: "#2563eb" }}/>
+                            </Link>
+                           </motion.li>
+                          <motion.li
+                           whileHover={{ scale: 1.1 }}
+                           whileTap={{ scale: 0.95 }}
+                          variants={itemVariants}
+                        >
+                            <Link to="https://web.facebook.com/israel.nanor.1/" target='_blank' className='mr-4'>
+                              <FontAwesomeIcon icon={faTwitterSquare} size={'2x'} style={{ color: "#F97316" }}/>
+                            </Link>
+                         </motion.li>
+                      </motion.ul>
+                    </motion.div>
+                  </motion.li>
+                  <motion.li 
+                  variants={itemVariants}
+                  className="w-full pt-4 my-auto">
+                    <h2 className="text-xl md:text-2xl">Hi! I&apos;m Israel,</h2>
+                  </motion.li>
+                  <motion.li 
+                  variants={itemVariants}
+                  className="py-2">
+                    <p className="text-md leading-loose">I am a professional software engineer with over four years of experience. Driven by my passion for technology and problem-solving, I enjoy creating digital solutions. I strive to be at the forefront of innovation, contributing to the transformation of the digital landscape. My experience in software development enables me to build seamless and innovative solutions that drive business growth.
+                    </p>
+                  </motion.li >
+                </motion.ul>
+              </motion.div>
+              <div className=" w-full ml-4 bg-white-500 h-full">
+              under contruction
+              </div>
+          </div>
           </section>
 
           <section className="pt-12" id="projects">

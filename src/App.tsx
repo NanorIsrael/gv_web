@@ -75,10 +75,10 @@ function App() {
            
           </section>
         </section>
-       <p className='container primary-bg h-full'>
+       <div className='container primary-bg h-full'>
        <hr/>
        &copy; GraceValley Technologies
-       </p>
+       </div>
       </footer>
     </div>
   );
