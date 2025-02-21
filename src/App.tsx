@@ -7,7 +7,7 @@ import './App.css';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Home from './pages/Home';
-import Header from './components/Header.tsx/header';
+import Header from './components/Header/header';
 
 
 function App() {

@@ -43,13 +43,13 @@ function Hero() {
   }
   
 	return (
-		<div className="grid md:grid-cols-3 gap-5 h-[50%] justify-between overflow-hidden">
+		<div className="grid md:grid-cols-3 gap-5 h-[50%] justify-between overflow-hidden mb-8">
 			<motion.div 
 			  initial={false}
 			  animate={ mounted ? "open": "closed" }
 			  custom={height}
 			  ref={containerRef}
-			  className="col-span-2  h-full"
+			  className="col-span-2 h-full shadow-md bg-gray-100"
 			>
 			  <motion.ul 
 			  variants={navVariants}
@@ -123,14 +123,25 @@ function Hero() {
 				<motion.li 
 				variants={itemVariants}
 				className="py-2">
-				  <p className="text-md leading-loose">I am a professional software engineer with over four years of experience. Driven by my passion for technology and problem-solving, I enjoy creating digital solutions. I strive to be at the forefront of innovation, contributing to the transformation of the digital landscape. My experience in software development enables me to build seamless and innovative solutions that drive business growth.
+				  <p className="text-md leading-loose text-dark font-bold">I am a professional software engineer with over four years of experience. Driven by my passion for technology and problem-solving, I enjoy creating digital solutions. I strive to be at the forefront of innovation, contributing to the transformation of the digital landscape. My experience in software development enables me to build seamless and innovative solutions that drive business growth.
 				  </p>
 				</motion.li >
 			  </motion.ul>
 			</motion.div>
 			<div className=" w-full ml-4 bg-white-500 h-full py-4">
-				<div className="w-[90%] mx-auto  pr-2 md:pr-4">
-					<h3 className="p-2 text-md font-semibold bg-[#2563eb] text-[#fff] items-center">Articles</h3>
+				<motion.div
+				initial={false}
+				animate={ mounted ? "open": "closed" }
+				custom={height}
+				ref={containerRef}
+				className="w-[90%] mx-auto  pr-2 md:pr-4"
+				>
+					<motion.h3
+						variants={itemVariants}
+						className="p-2 text-md font-semibold bg-[#2563eb] text-[#fff] items-center"
+					>
+						Articles
+					</motion.h3>
 					<motion.div
 					className="w-full p-4 my-auto"
 					initial={false}
@@ -180,7 +191,7 @@ function Hero() {
 					   </motion.li>
 					</motion.ul>
 				  </motion.div>
-				</div>
+				</motion.div>
 			 
 			</div>
 		</div>
