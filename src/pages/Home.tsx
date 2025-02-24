@@ -50,7 +50,7 @@ function Home() {
     <article aria-label="Home" className="max-w-[1170px] mx-auto py-24">
       <Hero />
 
-      <section className="pt-40 p-2 md:p-4 bg-white" id="projects">
+      <section className="md:pt-40 p-2 md:p-4 bg-white" id="projects">
         <h3 className="text-sm md:text-md  font-bold">Projects</h3>
         <h2 className="text-2xl md:text-3xl  font-bold mt-2">Showcasing My Expertise</h2>
         <p className="text-sm md:text-md mt-2">Explore a selection  of my full-stack projects.</p>

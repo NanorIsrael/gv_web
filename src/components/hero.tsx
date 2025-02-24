@@ -128,7 +128,7 @@ function Hero() {
 				</motion.li >
 			  </motion.ul>
 			</motion.div>
-			<div className=" w-full ml-4 bg-white-500 h-full py-4">
+			<div className="hidden md:block w-full ml-4 bg-white-500 h-full py-4">
 				<motion.div
 				initial={false}
 				animate={ mounted ? "open": "closed" }
