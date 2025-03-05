@@ -49,7 +49,7 @@ function Hero() {
 			  animate={ mounted ? "open": "closed" }
 			  custom={height}
 			  ref={containerRef}
-			  className="col-span-2 h-full shadow-md bg-gray-100"
+			  className="col-span-2 h-full shadow-md"
 			>
 			  <motion.ul 
 			  variants={navVariants}
@@ -123,7 +123,7 @@ function Hero() {
 				<motion.li 
 				variants={itemVariants}
 				className="py-2">
-				  <p className="text-md leading-loose text-dark font-bold">I am a professional software engineer with over four years of experience. Driven by my passion for technology and problem-solving, I enjoy creating digital solutions. I strive to be at the forefront of innovation, contributing to the transformation of the digital landscape. My experience in software development enables me to build seamless and innovative solutions that drive business growth.
+				  <p className="text-md leading-loose text-dark font">I am a professional software engineer with over four years of experience. Driven by my passion for technology and problem-solving, I enjoy creating digital solutions. I strive to be at the forefront of innovation, contributing to the transformation of the digital landscape. My experience in software development enables me to build seamless and innovative solutions that drive business growth.
 				  </p>
 				</motion.li >
 			  </motion.ul>

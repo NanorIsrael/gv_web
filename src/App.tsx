@@ -17,7 +17,7 @@ function App() {
   const whiteListedPath = ['/projects', '/about']
 
   return (
-    <div className="">
+    <div className="bg-gray-100">
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
