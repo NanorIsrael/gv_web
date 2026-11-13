@@ -1,50 +1,26 @@
-import { useEffect, useState } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { stack } from '../data/content';
 
-type Props = {
-  speed: number
-  hoverSpeed: number
-  shadow: boolean
-  children: React.ReactNode
-  className?: string
-}
-const Marquee = ({ speed, hoverSpeed, shadow, children, ...rest }: Props) => {
-
-  const [offset, setOffset] = useState(0);
-  const [isHovering, setIsHovering] = useState(false);
-
-  const shadowClass = `after:content-[''] after:absolute after:block after:z-10 after:h-full before:content-[''] before:absolute 
-    before:block before:z-10 before:h-full before:end-0 after:shadow-[10px_0_50px_65px_rgba(256,256,256,1)] 
-    before:shadow-[-10px_0_50px_65px_rgba(256,256,256,1)] dark:after:shadow-[10px_0_50px_65px_rgba(16,24,39,1)]
-    dark:before:shadow-[-10px_0_50px_65px_rgba(16,24,39,1)]`;
-
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const divCls:string = twMerge('relative flex overflow-hidden w-full', shadow ? shadowClass : '', rest.className);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setOffset((prevOffset) => {
-        if (Math.abs(prevOffset) >= window.innerWidth) {
-          return 0;
-        } else {
-          return isHovering ? prevOffset - hoverSpeed : prevOffset - speed;
-        }
-      });
-    }, 10);
-
-    return () => clearInterval(intervalId);
-  }, [speed, hoverSpeed, isHovering]);
-
+/**
+ * Infinite tech-stack ticker. Pure CSS animation (no per-frame React renders);
+ * pauses on hover and stops under prefers-reduced-motion.
+ */
+export default function TechMarquee() {
+  const items = [...stack, ...stack];
   return (
-  <div className={divCls} role="banner" onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} onFocus={()=> null}>
-    <div className="flex items-center min-w-full justify-around" style={{ transform: `translateX(${offset}px)` }}>
-      {children}
+    <div className="marquee-mask group relative overflow-hidden" aria-label="Technology stack">
+      <ul className="flex w-max animate-marquee gap-3 group-hover:[animation-play-state:paused] motion-reduce:w-auto motion-reduce:flex-wrap motion-reduce:animate-none">
+        {items.map((tech, i) => (
+          <li
+            key={`${tech}-${i}`}
+            aria-hidden={i >= stack.length}
+            className={`whitespace-nowrap rounded-full border border-line bg-surface px-4 py-2 text-sm text-muted ${
+              i >= stack.length ? 'motion-reduce:hidden' : ''
+            }`}
+          >
+            {tech}
+          </li>
+        ))}
+      </ul>
     </div>
-    <div className="flex items-center min-w-full justify-around" style={{ transform: `translateX(${offset}px)` }}>
-      {children}
-    </div>
-  </div>
   );
-};
-
-export default Marquee;
+}

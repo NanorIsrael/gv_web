@@ -1,88 +1,33 @@
 import { Link } from 'react-router-dom';
-import Project from '../components/Project';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import ProjectCard from '../components/Project';
+import { Reveal } from '../components/ui';
+import { Icon } from '../components/icons';
+import { projects } from '../data/content';
 
-function Projects() {
-  const project = [
-    { 
-    id: 1,
-    url: "https://foodscrapspickup.com",
-    name: "Ramsey/Washington", 
-    description:"For residents of Washington & Ramsey County who would like to \
-    subscribe to the new food scraps pickup program and want to learn \
-    more about the program, the R&W food scraps pickup program website \
-    will allow users to order their free annual supply of food scrap \
-    bags yearly or order additional bags at a cost and to learn more \
-    about the program.",
-    img: "rw",
-  },
-  {
-    id: 7,
-    url: "https://www.pricedafom.com/",
-    name:'pricedafom', 
-    description:`${"An e-commerce platform designed to provide a seamless online shopping experience. The platform enables businesses to showcase their products, manage inventory, and facilitate secure transactions, while customers can browse, search, and purchase items effortlessly."}`,
-    img: "pricedafom",
-  },
-  {
-    id: 6,
-    url: "#",
-    name:'photo genius', 
-    description:`${"Allows you to upload a photo and ask any question about the photo.\
-    This application uses gemini api."}`,
-    img: "geminichatbot",
-  },
-  {
-    id: 2,
-    url: "https://nanorisrael.github.io/movie_store/",
-    name:'cimoviez', 
-    description:`${"A movie library will all information you need about a movie. A personal project and still in progress."}`,
-    img: "cimoviez",
-  },
-  {
-    id: 3,
-    url: "https://animated-sopapillas-60dde9.netlify.app/book-now",
-    name:'TruHair & Beaty', 
-    description:`${"A booking application to enable a beautician client, serve her customers \
-     with all their beauty needs and provide other online services. A personal project and still in progress."}`,
-    img: "truhair",
-  },
-  {
-    id: 4,
-    url: "https://dreamy-hermann-e618fe.netlify.app",
-    name:'Gv Foods', 
-    description:`${"Get all your food needs from gv foods. We are ready to serve you. A personal project and still in progress."}`,
-    img: "bistro",
-  },
-  {
-    id: 5,
-    url: "https://gifted-einstein-27d727.netlify.app",
-    name:'Tenzies', 
-    description:`${"An online tenzies game. We are ready to serve you. A personal project and still in progress."}`,
-    img: "tenzies",
-  }
-]
+export default function Projects() {
   return (
-    <>
-     <header className={'flex justify-between z-0 py-[36px]'}>
-      <nav className='container primary-bg rounded-[70px]'>
-        <Link to={'/'} className="p-2 text-2xl">
-          <FontAwesomeIcon icon={faArrowLeft} />
+    <section aria-labelledby="projects-title" className="pb-24 pt-28 sm:pt-36">
+      <div className="container-content">
+        <Link to="/" className="inline-flex min-h-[44px] items-center gap-2 text-sm text-muted hover:text-fg">
+          <Icon name="arrowLeft" className="text-xs" /> Back home
         </Link>
-      </nav>
-        
-      </header>
-      <article aria-label="Projects" className='bg-gray-100 container'>
-       { 
-       project.map(p => <Project
-        description={p.description}
-        url={p.url} 
-        name={p.name}
-        img={p.img}
-        key={p.id}/>)
-      }
-       </article>
-    </>
+        <Reveal className="mt-6 max-w-2xl">
+          <p className="eyebrow">Projects</p>
+          <h1 id="projects-title" className="mt-3 text-4xl font-semibold sm:text-5xl">
+            Work &amp; experiments
+          </h1>
+          <p className="mt-4 text-muted">
+            Client platforms, products and side projects, from county-wide public services to AI experiments.
+          </p>
+        </Reveal>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, i) => (
+            <Reveal key={project.id} delay={(i % 3) * 0.05}>
+              <ProjectCard project={project} />
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
-export default Projects;

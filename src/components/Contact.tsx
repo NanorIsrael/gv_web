@@ -1,45 +1,78 @@
-import { Modal } from "./Modal";
+import { useState, type FormEvent } from 'react';
+import { profile } from '../data/content';
+import { Modal } from './Modal';
 
 type ContactProps = {
-	toggleModal: boolean
-	setToggleModal:(bool: boolean) => void
+  open: boolean;
+  onClose: () => void;
+};
+
+export default function Contact({ open, onClose }: ContactProps) {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Project enquiry from ${name}`);
+    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
+    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
+    onClose();
+  };
+
+  return (
+    <Modal open={open} onClose={onClose} title="Let's work together">
+      <form className="space-y-4" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="contact-name" className="mb-1.5 block text-sm font-medium">
+            Full name
+          </label>
+          <input
+            id="contact-name"
+            className="field"
+            autoComplete="name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="contact-email" className="mb-1.5 block text-sm font-medium">
+            Email
+          </label>
+          <input
+            id="contact-email"
+            type="email"
+            className="field"
+            autoComplete="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="contact-message" className="mb-1.5 block text-sm font-medium">
+            Project details
+          </label>
+          <textarea
+            id="contact-message"
+            className="field resize-y"
+            rows={5}
+            required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </div>
+        <p className="text-xs text-muted">Sending opens your email app with this message ready to go.</p>
+        <div className="flex flex-col-reverse gap-3 pt-2 sm:flex-row sm:justify-end">
+          <button type="button" className="btn-ghost" onClick={onClose}>
+            Cancel
+          </button>
+          <button type="submit" className="btn-primary">
+            Send message
+          </button>
+        </div>
+      </form>
+    </Modal>
+  );
 }
-  
-export default function Contact({toggleModal, setToggleModal}: ContactProps) {
-	const handleCancel = () => {
-		setToggleModal(true)
-	}
-
-
-	return (
-	  <Modal xtraclass="" hidden={toggleModal}>
-		<form action="" className="text-sm">
-			<fieldset>
-				<div className="text-sm py-2">
-				<label htmlFor="email" className="flex flex-start">
-					Full name
-				</label>
-				<input id={"email"} type="text" className="p-2 w-full border-2 border-black " />
-				</div>
-				<div className="text-sm py-2">
-				<label htmlFor="email" className="flex flex-start">
-					Email
-				</label>
-				<input id={"email"} type="email" className="p-2 w-full border-2 border-black " />
-				</div>
-				<div className="text-sm py-2">
-				<label htmlFor="email" className="flex flex-start">
-					Message
-				</label>
-				<textarea id={"email"} className="p-2 w-full border-2 border-black" rows={5} />
-				<div className="flex py-1 justify-center">
-					<button className="mr-2 w-[150px] bg-white text-black hover:bg-black hover:text-white font-bold py-2 px-4 rounded my-2 border border-black" onClick={handleCancel}>Cancel</button>
-					<button className="w-[150px] bg-black hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded mr-4 my-2" onClick={() => null}>Send</button>
-				</div>
-				</div>
-			</fieldset>		
-		</form>
-	  </Modal>
-	);
-  }
-  
