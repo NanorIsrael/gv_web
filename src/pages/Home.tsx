@@ -5,7 +5,8 @@ import TechMarquee from '../components/SwiftIcons';
 import { Reveal, SectionHeading } from '../components/ui';
 import { Icon } from '../components/icons';
 import { useContact } from '../components/ContactProvider';
-import { capabilities, principles, profile, projects, testimonials } from '../data/content';
+import ExperienceTimeline from '../components/Experience';
+import { capabilities, education, experience, principles, profile, projects, testimonials } from '../data/content';
 
 export default function Home() {
   const openContact = useContact();
@@ -42,6 +43,35 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section id="experience" aria-labelledby="experience-title" className="scroll-mt-20 border-t border-line py-24">
+        <div className="container-content grid gap-12 lg:grid-cols-[1fr_2fr]">
+          <div className="lg:sticky lg:top-28 lg:self-start">
+            <SectionHeading
+              id="experience-title"
+              eyebrow="Experience"
+              title="Where I've shipped"
+              description="Roles where I've owned product work across frontend, backend and integrations."
+            />
+            <Reveal delay={0.1} className="mt-10">
+              <h3 className="eyebrow">Education</h3>
+              <ul className="mt-4 space-y-3">
+                {education.map((e) => (
+                  <li key={e.title} className="card p-5">
+                    <p className="font-display font-semibold text-fg">{e.title}</p>
+                    <p className="mt-1 text-sm text-muted">
+                      {e.school} · {e.period}
+                    </p>
+                    {e.note && <p className="mt-1 text-sm text-muted">{e.note}</p>}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+          <ExperienceTimeline items={experience} />
         </div>
       </section>
 

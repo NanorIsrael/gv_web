@@ -6,6 +6,7 @@ import { useContact } from '../ContactProvider';
 
 const navItems = [
   { label: 'Work', to: '/#work' },
+  { label: 'Experience', to: '/#experience' },
   { label: 'Expertise', to: '/#expertise' },
   { label: 'Projects', to: '/projects' },
   { label: 'About', to: '/about' },

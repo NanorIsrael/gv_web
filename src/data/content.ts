@@ -98,6 +98,101 @@ export const projects: Project[] = [
   },
 ];
 
+export type Experience = {
+  role: string;
+  company: string;
+  location: string;
+  /** Display strings, e.g. 'Jul 2025' / 'Present'. */
+  start: string;
+  end: string;
+  highlights: string[];
+  stack?: string[];
+};
+
+// Most recent first. Add earlier roles below in the same shape.
+export const experience: Experience[] = [
+  {
+    role: 'Applications Developer',
+    company: 'MojaPay Limited',
+    location: 'Accra, Ghana · Hybrid',
+    start: 'Jul 2025',
+    end: 'Present',
+    highlights: [
+      'Design, develop and maintain web and mobile applications using React, Next.js, Node.js, Python and Java.',
+      'Collaborate with UX/UI designers, backend developers and product managers to deliver seamless user experiences.',
+      'Write clean, efficient, well-documented code across the full stack following industry best practices.',
+      'Integrate applications with REST APIs, PostgreSQL/MongoDB databases and third-party services, including payment gateways.',
+      'Run unit and integration testing, debug across React/Next.js frontends and Node.js/Python/Java backends, and take part in code reviews to keep systems reliable and performant.',
+    ],
+    stack: ['React', 'Next.js', 'Node.js', 'Python', 'Java', 'PostgreSQL', 'MongoDB'],
+  },
+  {
+    role: 'Web Software Engineer',
+    company: 'Kpentag Digital',
+    location: 'Accra, Ghana · Remote',
+    start: 'Sep 2024',
+    end: 'Jun 2025',
+    highlights: [
+      'Designed and developed robust Django web applications with a Next.js frontend, focusing on scalable architecture and performance optimization.',
+      'Built and documented Django REST APIs with comprehensive authentication, data validation and seamless third-party integrations.',
+      'Implemented Django optimization techniques including database indexing, caching strategies and system performance improvements.',
+      'Collaborated in an agile environment using Django best practices, code reviews and unit testing to ensure high-quality deliverables.',
+    ],
+    stack: ['Django', 'Django REST Framework', 'Next.js', 'Python'],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Compoze Labs LLC',
+    location: 'Texas, USA · Remote',
+    start: 'Mar 2022',
+    end: 'Apr 2023',
+    highlights: [
+      'Designed and developed full-stack web applications using a React frontend and Node.js/Serverless backend services.',
+      'Built RESTful APIs with Node.js/Serverless for seamless frontend-backend communication and third-party integrations.',
+      'Developed and maintained a microservices architecture with comprehensive testing, monitoring and cloud deployment strategies.',
+      'Collaborated in cross-functional agile teams for rapid application development and feature delivery.',
+    ],
+    stack: ['React', 'Node.js', 'Serverless', 'Microservices'],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Alster Technologies',
+    location: 'Minnesota, USA · Remote',
+    start: 'Feb 2021',
+    end: 'Jul 2022',
+    highlights: [
+      'Developed full-stack solutions using a React frontend with Node.js REST API backend integration.',
+      'Transformed user stories into functional features through close collaboration with technical leadership.',
+      'Enhanced code quality through comprehensive code reviews and unit testing.',
+      'Built RESTful APIs using Node.js/Express for seamless frontend-backend communication.',
+    ],
+    stack: ['React', 'Node.js', 'Express'],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Logiciel Ghana Ltd',
+    location: 'Accra, Ghana',
+    start: 'Apr 2020',
+    end: 'Dec 2020',
+    highlights: [
+      'Developed and maintained web applications using React and Java, focusing on user experience and performance optimization.',
+      'Implemented database design strategies using Java persistence (JPA/Hibernate) and PostgreSQL for efficient data management.',
+      'Created responsive React frontend interfaces integrated with Java backend services and RESTful endpoints.',
+      'Optimized application performance through code refactoring and database query optimization.',
+    ],
+    stack: ['React', 'Java', 'JPA/Hibernate', 'PostgreSQL'],
+  },
+];
+
+export const education = [
+  {
+    title: 'B.Sc. Computer Engineering',
+    school: 'University of Ghana',
+    period: '2015 – 2019',
+    note: 'Software Engineering Program',
+  },
+];
+
 export type Capability = {
   title: string;
   description: string;
