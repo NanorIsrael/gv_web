@@ -46,13 +46,13 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'pricedafom',
-    name: 'pricedafom',
-    url: 'https://www.pricedafom.com/',
-    img: 'pricedafom',
+    id: 'cedarstone',
+    name: 'cedarstone',
+    url: 'https://cedarstonesupplies.com',
+    img: 'cedarstone',
     category: 'E-commerce marketplace',
     summary:
-      'Multi-vendor commerce platform where businesses showcase products, manage inventory and take secure payments, while customers browse, search and buy effortlessly.',
+      'An ecommerce platform where businesses showcase products, manage inventory, while customers browse, search and buy effortlessly.',
     featured: true,
   },
   {

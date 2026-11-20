@@ -41,7 +41,7 @@ export default function Hero() {
             <span className="text-muted">for teams that need it done right.</span>
           </motion.h1>
           <motion.p variants={item} className="mt-6 max-w-xl text-lg text-muted">
-            I&apos;m {profile.name.split(' ')[0]}, a full-stack engineer with 4+ years designing and shipping
+            I&apos;m {profile.name.split(' ')[0]}, a full-stack engineer with 5+ years designing and shipping
             production web applications, from public-sector platforms to SaaS and e-commerce, across
             React, TypeScript, Node.js and Python.
           </motion.p>
